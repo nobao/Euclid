@@ -1,0 +1,8 @@
+.page {
+  max-width: 1920px;
+  min-width: 320px;
+  margin: 0 auto;
+  font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+  color: var(--text-color);
+  background-color: var(--bg-color);
+}

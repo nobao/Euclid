@@ -1,0 +1,30 @@
+:root {
+  --color-black: #000;
+  --color-grey-dark: #414141;
+  --color-grey: #666;
+  --color-grey-light: #cacaca;
+  --color-white: #fff;
+  --color-orange: #f90;
+  --color-orange-dark: #e1670e;
+  --color-orange-light: #ffb84d;
+  --color-transparent: transparent;
+
+  --text-color: var(--color-black);
+  --text-light-color: var(--color-white);
+  --text-footer-color: var(--color-grey-light);
+  --text-placeholder-color: var(--color-grey-light);
+  --bg-color: var(--color-white);
+  --bg-footer-color: var(--color-black);
+  --input-bg-color: var(--color-grey-dark);
+  --input-focus-bg-color: var(--color-grey);
+  --icon-bg-color: var(--color-grey-light);
+  --link-hover-color: var(--color-orange);
+  --link-active-color: var(--color-orange-dark);
+  --button-bg-color: var(--color-orange);
+  --button-hover-bg-color: var(--color-orange-light);
+  --button-active-bg-color: var(--color-orange-dark);
+  --button-transparent-bg-color: var(--color-transparent);
+  --button-transparent-hover-bg-color: var(--color-orange);
+  --button-grey-hover-bg-color: var(--color-grey);
+  --button-grey-active-bg-color: var(--color-black);
+}

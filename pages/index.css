@@ -38,73 +38,17 @@
         url(/fonts/Montserrat-ExtraBold.woff) format('woff');
 }
 
-:root {
-  --color-black: #000;
-  --color-grey-dark: #414141;
-  --color-grey: #666;
-  --color-grey-light: #cacaca;
-  --color-white: #fff;
-  --color-orange: #f90;
-  --color-orange-dark: #e1670e;
-  --color-orange-light: #ffb84d;
-  --color-transparent: transparent;
+@import url('../vendor/variables.css');
+@import url('../blocks/visually-hidden/visually-hidden.css');
+@import url('../blocks/page/page.css');
+@import url('../blocks/page/__header/page__header.css');
+@import url('../blocks/header/header.css');
+@import url('../blocks/header/__logo/header__logo.css');
 
-  --text-color: var(--color-black);
-  --text-light-color: var(--color-white);
-  --text-footer-color: var(--color-grey-light);
-  --text-placeholder-color: var(--color-grey-light);
-  --bg-color: var(--color-white);
-  --bg-footer-color: var(--color-black);
-  --input-bg-color: var(--color-grey-dark);
-  --input-focus-bg-color: var(--color-grey);
-  --icon-bg-color: var(--color-grey-light);
-  --link-hover-color: var(--color-orange);
-  --link-active-color: var(--color-orange-dark);
-  --button-bg-color: var(--color-orange);
-  --button-hover-bg-color: var(--color-orange-light);
-  --button-active-bg-color: var(--color-orange-dark);
-  --button-transparent-bg-color: var(--color-transparent);
-  --button-transparent-hover-bg-color: var(--color-orange);
-  --button-grey-hover-bg-color: var(--color-grey);
-  --button-grey-active-bg-color: var(--color-black);
-}
 
-.visually-hidden {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  margin: -1px;
-  border: 0;
-  padding: 0;
-  white-space: nowrap;
-  clip-path: inset(100%);
-  clip: rect(0 0 0 0);
-  overflow: hidden;
-}
 
-.page {
-  max-width: 1920px;
-  margin: 0 auto;
-  font-family: 'Montserrat', Arial, Helvetica, sans-serif;
-  color: var(--text-color);
-  background-color: var(--bg-color);
-}
 
-.page__header {
-  margin-bottom: 50px;
-}
 
-.header {
-  display: flex;
-  align-items: center;
-  padding: 14px 75px 14px 69px;
-  border-radius: 0px 0px 32px 32px;
-  box-shadow: 0px 5px 40px rgba(0, 0, 0, 0.1);
-}
-
-.header__logo {
-  flex-shrink: 0;
-}
 
 .header__menu {
   margin-left: auto;
