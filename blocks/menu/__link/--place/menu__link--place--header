@@ -1,0 +1,4 @@
+.menu__link--place--header {
+  padding: 5px;
+  color: var(--text-color);
+}

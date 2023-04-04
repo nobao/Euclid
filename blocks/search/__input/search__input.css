@@ -1,0 +1,21 @@
+.search__input {
+  box-sizing: border-box;
+  width: 412px;
+  flex-grow: 0;
+  flex-shrink: 0;
+  margin-right: 10px;
+  padding-bottom: 5px;
+  font-size: 18px;
+  line-height: 1;
+  color: var(--text-color);
+  border: none;
+  border-bottom: 1px solid var(--text-placeholder-color);
+  outline: none;
+}
+
+.search__input::placeholder {
+  font-size: 18px;
+  line-height: 1;
+  font-weight: 500;
+  color: var(--text-placeholder-color);
+}

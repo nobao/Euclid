@@ -1,0 +1,8 @@
+.search__submit {
+  width: 24px;
+  height: 24px;
+  background-color: var(--color-transparent);
+  outline: none;
+  border: none;
+  cursor: pointer;
+}

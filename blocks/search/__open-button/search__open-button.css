@@ -1,0 +1,6 @@
+.search__open-button {
+  padding: 5px;
+  border: none;
+  background-color: var(--color-transparent);
+  outline: none;
+}

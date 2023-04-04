@@ -1,160 +1,24 @@
-@font-face {
-  font-family: 'Montserrat';
-  font-style: normal;
-  font-weight: 400;
-  src: url(/fonts/Montserrat-Regular.woff2) format('woff2'),
-        url(/fonts/Montserrat-Regular.woff) format('woff');
-}
-
-@font-face {
-  font-family: 'Montserrat';
-  font-style: normal;
-  font-weight: 500;
-  src: url(/fonts/Montserrat-Medium.woff2) format('woff2'),
-        url(/fonts/Montserrat-Medium.woff) format('woff');
-}
-
-@font-face {
-  font-family: 'Montserrat';
-  font-style: normal;
-  font-weight: 600;
-  src: url(/fonts/Montserrat-SemiBold.woff2) format('woff2'),
-        url(/fonts/Montserrat-SemiBold.woff) format('woff');
-}
-
-@font-face {
-  font-family: 'Montserrat';
-  font-style: normal;
-  font-weight: 700;
-  src: url(/fonts/Montserrat-Bold.woff2) format('woff2'),
-        url(/fonts/Montserrat-Bold.woff) format('woff');
-}
-
-@font-face {
-  font-family: 'Montserrat';
-  font-style: normal;
-  font-weight: 800;
-  src: url(/fonts/Montserrat-ExtraBold.woff2) format('woff2'),
-        url(/fonts/Montserrat-ExtraBold.woff) format('woff');
-}
-
 @import url('../vendor/variables.css');
+@import url('../vendor/fonts.css');
 @import url('../blocks/visually-hidden/visually-hidden.css');
 @import url('../blocks/page/page.css');
 @import url('../blocks/page/__header/page__header.css');
 @import url('../blocks/header/header.css');
 @import url('../blocks/header/__logo/header__logo.css');
-
-
-
-
-
-
-.header__menu {
-  margin-left: auto;
-  margin-right: 13.54%;
-}
-
-.logo {
-  display: block;
-  height: 72px;
-  cursor: pointer;
-}
-
-.logo--place--header {
-  width: 225px;
-}
-
-.logo__img {
-  display: block;
-  width: 100%;
-}
-
-.menu {
-  font-weight: 600;
-  font-size: 18px;
-}
-
-.menu--place--header {
-  line-height: 1;
-}
-
-.menu__list {
-  margin: 0;
-  padding: 0;
-  list-style-type: none;
-}
-
-.menu__list--place--header {
-  display: flex;
-  align-items: center;
-}
-
-.menu__item--place--header:not(:last-child) {
-  margin-right: 12%;
-}
-
-.menu__link {
-  display: block;
-  text-decoration: none;
-  cursor: pointer;
-}
-
-.menu__link--place--header {
-  padding: 5px;
-  color: var(--text-color);
-}
-
-.search__open-button {
-  padding: 5px;
-  border: none;
-  background-color: var(--color-transparent);
-  outline: none;
-}
-
-.search__open-icon {
-  width: 24px;
-  height: 24px;
-}
-
-.search__form {
-  position: relative;
-  box-sizing: border-box;
-  width: 539px;
-  display: none;
-  align-items: center;
-  padding: 16px 13px 16px 32px;
-  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.12);
-  border-radius: 24px;
-}
-
-.search__input {
-  box-sizing: border-box;
-  width: 412px;
-  flex-grow: 0;
-  flex-shrink: 0;
-  margin-right: 10px;
-  padding-bottom: 5px;
-  font-size: 18px;
-  line-height: 1;
-  color: var(--text-color);
-  border: none;
-  border-bottom: 1px solid var(--text-placeholder-color);
-  outline: none;
-}
-
-.search__input::placeholder {
-  font-size: 18px;
-  line-height: 1;
-  font-weight: 500;
-  color: var(--text-placeholder-color);
-}
-
-.search__submit {
-  width: 24px;
-  height: 24px;
-  background-color: var(--color-transparent);
-  outline: none;
-  border: none;
-  cursor: pointer;
-}
+@import url('../blocks/logo/logo.css');
+@import url('../blocks/logo/--place/logo--place--header.css');
+@import url('../blocks/logo/__img/logo__img.css');
+@import url('../blocks/menu/menu.css');
+@import url('../blocks/menu/--place/menu--place--header.css');
+@import url('../blocks/menu/__list/menu__list.css');
+@import url('../blocks/menu/__list/--place/menu__list--place--header.css');
+@import url('../blocks/menu/__item/menu__item.css');
+@import url('../blocks/menu/__item/--place/menu__item--place--header.css');
+@import url('../blocks/menu/__link/menu__link.css');
+@import url('../blocks/menu/__link/--place/menu__link--place--header');
+@import url('../blocks/search/search.css');
+@import url('../blocks/search/__open-button/search__open-button.css');
+@import url('../blocks/search/__open-icon/search__open-icon.css');
+@import url('../blocks/search/__form/search__form.css');
+@import url('../blocks/search/__input/search__input.css');
+@import url('../blocks/search/__submit/search__submit.css');
