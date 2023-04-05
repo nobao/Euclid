@@ -1,5 +1,5 @@
 .search__form {
-  position: relative;
+  position: absolute;
   box-sizing: border-box;
   width: 539px;
   display: none;
