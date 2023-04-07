@@ -1,0 +1,7 @@
+.hero__slider-dot {
+  width: 15px;
+  height: 15px;
+  background-color: var(--icon-bg-color);
+  border-radius: 50%;
+  cursor: pointer;
+}

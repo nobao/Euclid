@@ -24,3 +24,25 @@
 @import url('../blocks/search/__form/search__form.css');
 @import url('../blocks/search/__input/search__input.css');
 @import url('../blocks/search/__submit/search__submit.css');
+@import url('../blocks/page/__content/page__content.css');
+@import url('../blocks/content/content.css');
+@import url('../blocks/content/__hero/content__hero.css');
+@import url('../blocks/hero/hero.css');
+@import url('../blocks/hero/--bg/hero--bg--1.css');
+@import url('../blocks/hero/__title/hero__title.css');
+@import url('../blocks/heading-text/heading-text.css');
+@import url('../blocks/heading-text/--color/heading-text--color--white.css');
+@import url('../blocks/hero/__text/hero__text.css');
+@import url('../blocks/button/button.css');
+@import url('../blocks/button/--size/button--size--m.css');
+@import url('../blocks/button/--size/button--size--l.css');
+@import url('../blocks/button/--size/button--size--s.css');
+@import url('../blocks/button/--bg/button--bg--color.css');
+@import url('../blocks/button/--bg/button--bg--transparent.css');
+@import url('../blocks/button/--text/button--text--black.css');
+@import url('../blocks/button/--text/button--text--white.css');
+@import url('../blocks/button/--text/button--text--big.css');
+@import url('../blocks/hero/__slider-dots/hero__slider-dots.css');
+@import url('../blocks/hero/__slider-dot/hero__slider-dot.css');
+@import url('../blocks/hero/__slider-dot/--active/hero__slider-dot--active.css');
+

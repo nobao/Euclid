@@ -1,0 +1,11 @@
+.hero__slider-dots {
+  position: absolute;
+  bottom: 30px;
+  left: 50%;
+  display: flex;
+  gap: 20px;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  transform: translateX(-50%);
+}

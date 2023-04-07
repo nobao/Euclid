@@ -1,0 +1,9 @@
+.hero__title {
+  max-width: 837px;
+  margin: 0;
+  margin-bottom: 24px;
+  font-size: 70px;
+  line-height: 1.21;
+  font-weight: 800;
+  color: var(--text-light-color);
+}
