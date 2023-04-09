@@ -1,0 +1,25 @@
+.order__number {
+  padding: 5px;
+  font-size: 18px;
+  line-height: 1.22;
+  background: none;
+  border: none;
+  cursor: pointer;
+  outline: none;
+}
+
+.order__number:hover {
+  color: var(--link-hover-color);
+}
+
+.order__number:focus {
+  padding: 3px;
+  color: var(--text-color);
+  border: 2px solid var(--button-bg-color);
+}
+
+.order__number:active {
+  padding: 5px;
+  color: var(--button-active-bg-color);
+  border: none;
+}

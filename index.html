@@ -91,9 +91,9 @@
       </ul>
     </section>
 
-    <section class="page__about about">
+    <section class="content__about about">
       <h2 class="about__title title title--color--black">О нас</h2>
-      <p class="about__description">
+      <p class="about__description text text--color--black text--weight--normal">
         Также как перспективное планирование создаёт необходимость включения в
         производственный план целого ряда внеочередных мероприятий с&nbsp;учётом
         комплекса экспериментов, поражающих по&nbsp;своей масштабности и
@@ -110,7 +110,7 @@
       <div class="about__wrapper">
         <div class="about__info-card">
           <div class="about__info-content">
-            <p class="about__text text text--color--white">
+            <p class="about__text text text--color--white text--weight--700">
               Принимая во внимание показатели успешности, перспективное
               планирование способствует подготовке и реализации новых
               принципов
@@ -122,21 +122,21 @@
           </div>
         </div>
         <ul class="about__advantages-list">
-          <li class="about__advantages-item about__advantages-item--first">
+          <li class="about__advantages-item about__advantages-item--position--first">
             <h3 class="about__advantages-title heading-text heading-text--color--black">
               Консультация с широким активом
             </h3>
-            <p class="about__advantages-text text text--color--black">
+            <p class="about__advantages-text text text--color--black text--weight--normal">
               А также свежий взгляд на привычные вещи — безусловно открывает
               новые горизонты для как самодостаточных, так и внешне зависимых
               концептуальных решений
             </p>
           </li>
-          <li class="about__advantages-item about__advantages-item--second">
+          <li class="about__advantages-item about__advantages-item--position--second">
             <h3 class="about__advantages-title heading-text heading-text--color--black">
               В своём стремлении повысить
             </h3>
-            <p class="about__advantages-text text text--color--black">
+            <p class="about__advantages-text text text--color--black text--weight--normal">
               Качество жизни, они забывают, что сплочённость команды
               профессионалов представляет собой интересный эксперимент
               проверки прогресса профессионального сообщества
@@ -146,28 +146,34 @@
       </div>
     </section>
 
-    <section class="page__order order">
+    <section class="content__order order">
       <h2 class="order__title title title--color--black">Как мы работаем</h2>
       <ul class="order__list">
-        <li class="order__number order__number--first order__number--active">
-          1 шаг
+        <li class="order__item">
+          <button class="order__number order__number--first order__number--active" type="button">1 шаг</button>
         </li>
-        <li class="order__number order__number--second">1 шаг</li>
-        <li class="order__number order__number--third">3 шаг</li>
-        <li class="order__number order__number--fourth">4 шаг</li>
+        <li class="order__item">
+          <button class="order__number order__number--second" type="button">2 шаг</button>
+        </li>
+        <li class="order__item">
+          <button class="order__number order__number--third" type="button">3 шаг</button>
+        </li>
+        <li class="order__item">
+          <button class="order__number order__number--fourth" type="button">4 шаг</button>
+        </li>
       </ul>
-      <div class="order__step step step--first">
+      <div class="order__step step step--order--first">
         <div class="step__text-content">
           <h3 class="step__title heading-text heading-text--color--black">
             Проводим консультацию
           </h3>
-          <p class="step__description text text--color--black">
+          <p class="step__description text text--color--black text--weight--normal">
             Влечёт за собой процесс внедрения и модернизации приоритизации
             разума над эмоциями. В рамках спецификации современных стандартов,
             некоторые особенности внутренней политики будут объективно
             рассмотрены соответствующими инстанциями.
           </p>
-          <p class="step__description text text--color--black">
+          <p class="step__description text text--color--black text--weight--normal">
             А также представители современных социальных резервов,
             инициированные исключительно синтетически, ограничены
             исключительно образом мышления. Являясь всего лишь частью общей
@@ -187,17 +193,19 @@
             </button>
           </div>
         </div>
-        <picture class="step__picture">
-          <source srcset="/images/step-1_1920.jpg 1x, /images/step-1_1920@2x.jpg 2x">
-          <img class="step__img" src="/images/step-1_1920.jpg" alt="За рабочим столом люди с компьютерами и записями">
-        </picture>
+        <div class="step__image-content">
+          <picture class="step__picture">
+            <source srcset="/images/step-1_1920.jpg 1x, /images/step-1_1920@2x.jpg 2x">
+            <img class="step__img" src="/images/step-1_1920.jpg" alt="За рабочим столом люди с компьютерами и записями">
+          </picture>
+        </div>
       </div>
-      <div class="order__step step step--second">
+      <div class="order__step step step--order--second">
         <div class="step__text-content">
           <h3 class="step__title heading-text heading-text--color--black">
             Составляем смету
           </h3>
-          <p class="step__description text text--color--black">
+          <p class="step__description text text--color--black text--weight--normal">
             Внедрения и модернизации приоритизации разума над эмоциями. В
             рамках спецификации современных стандартов, некоторые особенности
             внутренней политики будут объективно рассмотрены соответствующими
@@ -222,12 +230,12 @@
           <img class="step__img" src="/images/step-2_1920.jpg" alt="Человек пишет ручкой на листе бумаги">
         </picture>
       </div>
-      <div class="order__step step step--third">
+      <div class="order__step step step--order--third">
         <div class="step__text-content">
           <h3 class="step__title heading-text heading-text--color--black">
             Привлекаем подрядчиков
           </h3>
-          <p class="step__description text text--color--black">
+          <p class="step__description text text--color--black text--weight--normal">
             Идейные соображения высшего порядка, а также новая модель
             организационной деятельности требует анализа прогресса
             профессионального сообщества. Высокий уровень вовлечения
@@ -256,12 +264,12 @@
           <img class="step__img" src="/images/step-3_1920.jpg" alt="Ноутбук и печатающие на нем руки человека">
         </picture>
       </div>
-      <div class="order__step step step--fourth">
+      <div class="order__step step step--order--fourth">
         <div class="step__text-content">
           <h3 class="step__title heading-text heading-text--color--black">
             Инспектируем все этапы работ
           </h3>
-          <p class="step__description text text--color--black">
+          <p class="step__description text text--color--black text--weight--normal">
             Высокий уровень вовлечения представителей целевой аудитории
             является чётким доказательством простого факта: высококачественный
             прототип будущего проекта напрямую зависит от дальнейших
@@ -289,7 +297,7 @@
       </div>
     </section>
 
-    <section class="page__faq faq">
+    <section class="content__faq faq">
       <h2 class="faq__title title title--color--black">
         Часто задаваемые вопросы
       </h2>
@@ -301,7 +309,7 @@
           <button class="faq__toggle faq__toggle--status--closed" type="button">
             <span class="faq__span faq__span--status--closed visually-hidden">Открыть</span>
           </button>
-          <p class="faq__answer text text--color--black">
+          <p class="faq__answer text text--color--black text--weight--normal">
             Являясь всего лишь частью общей картины, непосредственные
             участники технического прогресса призывают нас к новым свершениям,
             которые, в свою очередь, должны быть своевременно верифицированы.
@@ -315,7 +323,7 @@
             свою очередь, должны быть указаны как претенденты на роль ключевых
             факторов.
           </p>
-          <p class="faq__answer text text--color--black">
+          <p class="faq__answer text text--color--black text--weight--normal">
             Приятно, граждане, наблюдать, как некоторые особенности внутренней
             политики могут быть призваны к ответу. Явные признаки победы
             институционализации набирают популярность среди определённых слоёв
@@ -334,7 +342,7 @@
           <button class="faq__toggle faq__toggle--status--closed" type="button">
             <span class="faq__span faq__span--status--closed visually-hidden">Открыть</span>
           </button>
-          <p class="faq__answer text text--color--black">
+          <p class="faq__answer text text--color--black text--weight--normal">
             Являясь всего лишь частью общей картины, непосредственные
             участники технического прогресса призывают нас к новым свершениям,
             которые, в свою очередь, должны быть своевременно верифицированы.
@@ -348,7 +356,7 @@
             свою очередь, должны быть указаны как претенденты на роль ключевых
             факторов.
           </p>
-          <p class="faq__answer text text--color--black">
+          <p class="faq__answer text text--color--black text--weight--normal">
             Приятно, граждане, наблюдать, как некоторые особенности внутренней
             политики могут быть призваны к ответу. Явные признаки победы
             институционализации набирают популярность среди определённых слоёв
@@ -366,7 +374,7 @@
           <button class="faq__toggle faq__toggle--status--closed" type="button">
             <span class="faq__span faq__span--status--closed visually-hidden">Открыть</span>
           </button>
-          <p class="faq__answer text text--color--black">
+          <p class="faq__answer text text--color--black text--weight--normal">
             Являясь всего лишь частью общей картины, непосредственные
             участники технического прогресса призывают нас к новым свершениям,
             которые, в свою очередь, должны быть своевременно верифицированы.
@@ -380,7 +388,7 @@
             свою очередь, должны быть указаны как претенденты на роль ключевых
             факторов.
           </p>
-          <p class="faq__answer text text--color--black">
+          <p class="faq__answer text text--color--black text--weight--normal">
             Приятно, граждане, наблюдать, как некоторые особенности внутренней
             политики могут быть призваны к ответу. Явные признаки победы
             институционализации набирают популярность среди определённых слоёв
@@ -399,7 +407,7 @@
           <button class="faq__toggle faq__toggle--status--closed" type="button">
             <span class="faq__span faq__span--status--closed visually-hidden">Открыть</span>
           </button>
-          <p class="faq__answer text text--color--black">
+          <p class="faq__answer text text--color--black text--weight--normal">
             Являясь всего лишь частью общей картины, непосредственные
             участники технического прогресса призывают нас к новым свершениям,
             которые, в свою очередь, должны быть своевременно верифицированы.
@@ -413,7 +421,7 @@
             свою очередь, должны быть указаны как претенденты на роль ключевых
             факторов.
           </p>
-          <p class="faq__answer text text--color--black">
+          <p class="faq__answer text text--color--black text--weight--normal">
             Приятно, граждане, наблюдать, как некоторые особенности внутренней
             политики могут быть призваны к ответу. Явные признаки победы
             институционализации набирают популярность среди определённых слоёв
@@ -431,7 +439,7 @@
           <button class="faq__toggle faq__toggle--status--closed" type="button">
             <span class="faq__span faq__span--status--closed visually-hidden">Открыть</span>
           </button>
-          <p class="faq__answer text text--color--black">
+          <p class="faq__answer text text--color--black text--weight--normal">
             Являясь всего лишь частью общей картины, непосредственные
             участники технического прогресса призывают нас к новым свершениям,
             которые, в свою очередь, должны быть своевременно верифицированы.
@@ -445,7 +453,7 @@
             свою очередь, должны быть указаны как претенденты на роль ключевых
             факторов.
           </p>
-          <p class="faq__answer text text--color--black">
+          <p class="faq__answer text text--color--black text--weight--normal">
             Приятно, граждане, наблюдать, как некоторые особенности внутренней
             политики могут быть призваны к ответу. Явные признаки победы
             институционализации набирают популярность среди определённых слоёв
@@ -548,7 +556,7 @@
       </div>
 
       <div class="footer__column footer__column--content--text">
-        <p class="footer__text">
+        <p class="footer__text text text--color--grey text--weight--normal">
           Высокий уровень вовлечения представителей целевой аудитории является
           чётким доказательством простого факта: разбавленное изрядной долей
           эмпатии, рациональное мышление позволяет оценить значение модели

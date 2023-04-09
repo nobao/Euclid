@@ -1,0 +1,14 @@
+.button--bg--transparent {
+  background-color: var(--button-transparent-bg-color);
+  border: 3px solid var(--button-bg-color);
+}
+
+.button--bg--transparent:hover,
+.button--bg--transparent:focus {
+  background-color: var(--button-bg-color);
+}
+
+.button--bg--transparent:active {
+  border-color: var(--button-active-bg-color);
+  background-color: var(--button-active-bg-color);
+}

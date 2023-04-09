@@ -1,0 +1,10 @@
+.about__info-card {
+  position: relative;
+  min-height: 622px;
+  background-color: #89675a;
+  background-image: url(../../../images/about_1920.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  border-radius: 32px;
+}

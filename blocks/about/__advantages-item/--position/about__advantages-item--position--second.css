@@ -1,0 +1,3 @@
+.about__advantages-item--position--second::before {
+  background-image: url(../../../../images/about-1.svg);
+}

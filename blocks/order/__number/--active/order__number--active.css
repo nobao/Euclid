@@ -1,0 +1,3 @@
+.order__number--active {
+  color: var(--button-active-bg-color);
+}
