@@ -1,3 +1,9 @@
 .header__search {
+  margin-left: 260px;
+}
 
+@media screen and (max-width: 1680px) {
+  .header__search {
+    margin-left: 0;
+  }
 }

@@ -16,7 +16,7 @@
 @import url('../blocks/menu/__item/menu__item.css');
 @import url('../blocks/menu/__item/--place/menu__item--place--header.css');
 @import url('../blocks/menu/__link/menu__link.css');
-@import url('../blocks/menu/__link/--place/menu__link--place--header');
+@import url('../blocks/menu/__link/--place/menu__link--place--header.css');
 @import url('../blocks/header/__search/header__search.css');
 @import url('../blocks/search/search.css');
 @import url('../blocks/search/__open-button/search__open-button.css');
