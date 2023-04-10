@@ -1,5 +1,6 @@
 .menu__link {
   display: block;
+  box-sizing: border-box;
   text-decoration: none;
   cursor: pointer;
 }
