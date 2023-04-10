@@ -70,6 +70,10 @@
 @import url('../blocks/order/order.css');
 @import url('../blocks/order/__title/order__title.css');
 @import url('../blocks/order/__list/order__list.css');
+@import url('../blocks/order/__list/order__list.css');
 @import url('../blocks/order/__item/order__item.css');
 @import url('../blocks/order/__number/order__number.css');
-@import url('../blocks/order/__number/--active/order__number--active.css');
+@import url('../blocks/order/__step/order__step.css');
+@import url('../blocks/step/step.css');
+@import url('../blocks/step/__buttons/step__buttons.css');
+@import url('../blocks/step/__image-content/step__image-content.css');

@@ -1,5 +1,6 @@
 .order__list {
   display: flex;
+  grid-area: list;
   gap: 75px;
   margin: 0;
   margin-bottom: 45px;

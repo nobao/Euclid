@@ -1,3 +1,4 @@
 .order__title {
   margin-bottom: 50px;
+  grid-area: title;
 }
