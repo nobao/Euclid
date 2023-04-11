@@ -39,6 +39,7 @@
 @import url('../blocks/button/--size/button--size--m.css');
 @import url('../blocks/button/--size/button--size--l.css');
 @import url('../blocks/button/--size/button--size--s.css');
+@import url('../blocks/button/--size/button--size--xs.css');
 @import url('../blocks/button/--bg/button--bg--color.css');
 @import url('../blocks/button/--bg/button--bg--transparent.css');
 @import url('../blocks/button/--text/button--text--black.css');
@@ -74,8 +75,12 @@
 @import url('../blocks/order/__list/order__list.css');
 @import url('../blocks/order/__item/order__item.css');
 @import url('../blocks/order/__number/order__number.css');
+@import url('../blocks/order/__number/--active/order__number--active.css');
 @import url('../blocks/order/__text-content/order__text-content.css');
 @import url('../blocks/order/__buttons/order__buttons.css');
 @import url('../blocks/order/__image-content/order__image-content.css');
+@import url('../blocks/order/__picture/order__picture.css');
 @import url('../blocks/order/__img/order__img.css');
+@import url('../blocks/order/__heading/order__heading.css');
+@import url('../blocks/order/__description/order__description.css');
 

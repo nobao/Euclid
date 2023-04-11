@@ -1,3 +1,5 @@
 .order__image-content {
   grid-area: picture;
+  display: flex;
+  align-items: stretch;
 }

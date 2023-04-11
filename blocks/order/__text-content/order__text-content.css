@@ -1,3 +1,4 @@
 .order__text-content {
   grid-area: text;
+  margin-bottom: 18px;
 }

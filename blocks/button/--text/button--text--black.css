@@ -1,0 +1,21 @@
+.button--text--black {
+  padding: 19px 37px;
+  font-size: 16px;
+  line-height: 1.25;
+  color: var(--text-color);
+  border: 1px solid var(--text-color);
+  background-color: var(--button-transparent-bg-color);
+}
+
+.button--text--black:hover,
+.button--text--black:focus {
+  color: var(--text-light-color);
+  border-color: var(--button-grey-hover-bg-color);
+  background-color: var(--button-grey-hover-bg-color);
+}
+
+.button--text--black:active {
+  color: var(--text-light-color);
+  border-color: var(--button-grey-active-bg-color);
+  background-color: var(--button-grey-active-bg-color);
+}

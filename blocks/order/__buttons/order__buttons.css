@@ -1,3 +1,5 @@
 .order__buttons {
   grid-area: buttons;
+  display: flex;
+  gap: 32px;
 }
