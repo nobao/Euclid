@@ -1,6 +1,7 @@
 @import url('../vendor/variables.css');
 @import url('../vendor/fonts.css');
 @import url('../blocks/visually-hidden/visually-hidden.css');
+@import url('../blocks/hidden/hidden.css');
 @import url('../blocks/page/page.css');
 @import url('../blocks/page/__header/page__header.css');
 @import url('../blocks/header/header.css');
@@ -73,7 +74,8 @@
 @import url('../blocks/order/__list/order__list.css');
 @import url('../blocks/order/__item/order__item.css');
 @import url('../blocks/order/__number/order__number.css');
-@import url('../blocks/order/__step/order__step.css');
-@import url('../blocks/step/step.css');
-@import url('../blocks/step/__buttons/step__buttons.css');
-@import url('../blocks/step/__image-content/step__image-content.css');
+@import url('../blocks/order/__text-content/order__text-content.css');
+@import url('../blocks/order/__buttons/order__buttons.css');
+@import url('../blocks/order/__image-content/order__image-content.css');
+@import url('../blocks/order/__img/order__img.css');
+
