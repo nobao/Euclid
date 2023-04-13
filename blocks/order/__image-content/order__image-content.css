@@ -2,4 +2,6 @@
   grid-area: picture;
   display: flex;
   align-items: stretch;
+  border-radius: 32px;
+  overflow: hidden;
 }

@@ -1,0 +1,27 @@
+.faq__item--closed:hover::after,
+.faq__item--closed:focus-within::before,
+.faq__item--closed:hover::before,
+.faq__item--closed:focus-within::after {
+  background-color: var(--link-hover-color);
+  z-index: 10;
+}
+
+.faq__item--closed:hover .faq__heading {
+  color: var(--link-hover-color);
+}
+
+.faq__item--closed:hover {
+  cursor: pointer;
+}
+
+.faq__item--closed:hover .faq__toggle,
+.faq__item--closed:focus-within .faq__toggle {
+  background-color: var(--link-hover-color);
+}
+
+.faq__item--closed:hover .faq__toggle::before,
+.faq__item--closed:hover .faq__toggle::after,
+.faq__item--closed:focus-within .faq__toggle::before,
+.faq__item--closed:focus-within .faq__toggle::after {
+  background-color: var(--bg-color);
+}

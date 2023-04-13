@@ -1,0 +1,32 @@
+.faq__toggle {
+  position: absolute;
+  right: 0;
+  top: 50%;
+  width: 50px;
+  height: 50px;
+  transform: translateY(-50%);
+  border: none;
+  border-radius: 50%;
+  background-color: var(--icon-bg-color);
+  cursor: pointer;
+}
+
+.faq__toggle::before,
+.faq__toggle::after {
+  position: absolute;
+  content: '';
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: var(--text-color);
+}
+
+.faq__toggle::before {
+  width: 31px;
+  height: 1px;
+}
+
+.faq__toggle::after {
+  width: 1px;
+  height: 31px;
+}
