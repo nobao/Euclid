@@ -27,4 +27,6 @@
   --button-transparent-hover-bg-color: var(--color-orange);
   --button-grey-hover-bg-color: var(--color-grey);
   --button-grey-active-bg-color: var(--color-black);
+
+  --font-family: 'Montserrat', Arial, Helvetica, sans-serif;
 }

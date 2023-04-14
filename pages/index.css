@@ -51,6 +51,7 @@
 @import url('../blocks/content/__about/content__about.css');
 @import url('../blocks/title/title.css');
 @import url('../blocks/title/--color/title--color--black.css');
+@import url('../blocks/title/--color/title--color--cacaca.css');
 @import url('../blocks/about/__title/about__title.css');
 @import url('../blocks/about/__description/about__description.css');
 @import url('../blocks/text/text.css');
@@ -105,4 +106,14 @@
 @import url('../blocks/footer/__social/footer__social.css');
 @import url('../blocks/menu/__link/--place/menu__link--place--footer.css');
 @import url('../blocks/menu/__list/--place/menu__list--place--footer.css');
+@import url('../blocks/social/social.css');
+@import url('../blocks/social/__link/social__link.css');
+@import url('../blocks/social/__icon/social__icon.css');
+@import url('../blocks/form/form.css');
+@import url('../blocks/form/__fieldset/form__fieldset.css');
+@import url('../blocks/form/__title/form__title.css');
+@import url('../blocks/form/__label/form__label.css');
+@import url('../blocks/form/__input/form__input.css');
+@import url('../blocks/form/__input/--type/form__input--type--textarea.css');
+@import url('../blocks/form/__submit/form__submit.css');
 

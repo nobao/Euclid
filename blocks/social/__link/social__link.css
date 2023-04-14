@@ -1,0 +1,19 @@
+.social__link {
+  display: inline-block;
+  padding: 3px;
+  border: 2px solid transparent;
+  outline: none;
+}
+
+.social__link:hover .social__icon path {
+  fill: var(--link-hover-color);
+}
+
+
+.social__link:focus {
+  border-color: var(--link-hover-color);
+}
+
+.social__link:active .social__icon path {
+  fill: var(--link-active-color);
+}
