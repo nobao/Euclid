@@ -1,4 +1,5 @@
 .footer__column--content--text {
+  flex-basis: 363px;
   align-self: center;
   max-width: 363px;
 }
