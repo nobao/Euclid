@@ -1,4 +1,6 @@
 .footer__social {
   margin-top: auto;
   margin-bottom: 0;
+  margin-left: -3px;
+  margin-bottom: -9px;
 }

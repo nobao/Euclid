@@ -1,9 +1,10 @@
 .order__list {
   display: flex;
   grid-area: list;
-  gap: 75px;
+  gap: 76px;
   margin: 0;
-  margin-bottom: 45px;
+  margin-bottom: 50px;
+  margin-left: -5px;
   padding: 0;
   list-style-type: none;
 }
