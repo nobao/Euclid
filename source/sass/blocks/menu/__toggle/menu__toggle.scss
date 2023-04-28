@@ -1,0 +1,22 @@
+.menu__toggle {
+  box-sizing: content-box;
+  display: none;
+  width: 30px;
+  height: 23px;
+  padding: 3px;
+  background-color: transparent;
+  border: 2px solid transparent;
+  outline: none;
+}
+
+.menu__toggle:hover {
+  border-color: var(--link-hover-color);
+}
+
+.menu__toggle:focus {
+  border-color: var(--link-hover-color);
+}
+
+.menu__toggle:active .menu__toggle-icon {
+  fill: var(--link-active-color);
+}
