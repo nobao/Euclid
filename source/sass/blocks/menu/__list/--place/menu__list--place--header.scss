@@ -3,4 +3,13 @@
   flex-wrap: wrap;
   align-items: center;
   column-gap: 76px;
+
+  @media screen and (max-width: 1200px) {
+    position: absolute;
+    top: 0;
+    left: 0;
+    flex-direction: column;
+    min-height: 80vh;
+    background-color: var(--bg-color);
+  }
 }

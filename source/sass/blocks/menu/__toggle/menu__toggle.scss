@@ -7,16 +7,20 @@
   background-color: transparent;
   border: 2px solid transparent;
   outline: none;
-}
 
-.menu__toggle:hover {
-  border-color: var(--link-hover-color);
-}
+  &:hover {
+    border-color: var(--link-hover-color);
+  }
 
-.menu__toggle:focus {
-  border-color: var(--link-hover-color);
-}
+  &:focus {
+    border-color: var(--link-hover-color);
+  }
 
-.menu__toggle:active .menu__toggle-icon {
-  fill: var(--link-active-color);
+  &:active .menu__toggle-icon {
+    fill: var(--link-active-color);
+  }
+
+  @media screen and (max-width: 1200px) {
+    display: block;
+  }
 }
