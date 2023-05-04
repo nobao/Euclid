@@ -494,8 +494,13 @@ template {
     position: absolute;
     top: 0;
     left: 0;
+    z-index: 10;
+    box-sizing: border-box;
     flex-direction: column;
-    min-height: 80vh;
+    align-items: start;
+    padding: 170px 50px 50px;
+    min-width: 420px;
+    min-height: 100vh;
     background-color: var(--bg-color);
   }
 }
@@ -521,6 +526,8 @@ template {
 }
 @media screen and (max-width: 1200px) {
   .menu__toggle {
+    position: relative;
+    z-index: 100;
     display: block;
   }
 }
