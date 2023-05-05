@@ -1,10 +1,15 @@
 .search__form {
   position: absolute;
+  right: 19px;
+  top: 50%;
+  z-index: 1000;
   box-sizing: border-box;
-  width: 539px;
+  min-width: 539px;
   display: none;
   align-items: center;
-  padding: 16px 13px 16px 32px;
+  padding: 14px 9px 14px 32px;
+  background-color: var(--bg-color);
   box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.12);
   border-radius: 24px;
+  transform: translateY(-50%);
 }

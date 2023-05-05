@@ -1,0 +1,30 @@
+.search__close-button {
+  box-sizing: border-box;
+  padding: 2px 2px 0 2px;
+  background: none;
+  border: 2px solid var(--button-transparent-bg-color);
+
+  &:hover .search__close-icon {
+    circle {
+      stroke: var(--link-hover-color);
+    }
+
+    rect {
+      fill: var(--link-hover-color);
+    }
+  }
+
+  &:focus {
+    border-color: var(--link-hover-color);
+  }
+
+  &:active {
+    circle {
+      stroke: var(--text-color);
+    }
+
+    rect {
+      fill: var(--text-color);
+    }
+  }
+}

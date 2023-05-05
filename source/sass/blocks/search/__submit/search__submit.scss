@@ -1,8 +1,23 @@
 .search__submit {
-  width: 24px;
-  height: 24px;
-  background-color: var(--color-transparent);
+  padding: 2px 2px 0 2px;
+  margin-right: 12px;
+  background-color: var(--button-transparent-bg-color);
   outline: none;
-  border: none;
+  border: 2px solid var(--button-transparent-bg-color);
   cursor: pointer;
+
+  &:focus {
+  border-color: var(--link-hover-color);
+
+    .search__submit-icon {
+      path {
+        stroke: var(--text-color);
+      }
+
+      rect {
+        fill: var(--text-color);
+      }
+    }
+  }
+
 }
