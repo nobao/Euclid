@@ -430,6 +430,11 @@ template {
   position: relative;
   margin-bottom: 50px;
 }
+@media screen and (max-width: 1200px) {
+  .page__header {
+    margin-bottom: 40px;
+  }
+}
 
 .header {
   display: flex;
@@ -438,9 +443,13 @@ template {
   border-radius: 0px 0px 32px 32px;
   box-shadow: 0px 5px 40px rgba(0, 0, 0, 0.1);
 }
-@media screen and (max-width: 1680px) {
+@media screen and (max-width: 1618px) {
   .header {
     justify-content: space-between;
+  }
+}
+@media screen and (max-width: 1200px) {
+  .header {
     padding: 26px 45px 26px 45px;
   }
 }
@@ -476,7 +485,7 @@ template {
   margin-left: auto;
 }
 
-@media screen and (max-width: 1680px) {
+@media screen and (max-width: 1618px) {
   .header__menu {
     margin-left: 0;
   }
@@ -621,7 +630,7 @@ template {
 .header__search {
   margin-left: 250px;
 }
-@media screen and (max-width: 1680px) {
+@media screen and (max-width: 1618px) {
   .header__search {
     margin-left: 0;
   }
@@ -758,9 +767,19 @@ template {
   max-width: 1770px;
   padding: 0 75px;
 }
+@media screen and (max-width: 1200px) {
+  .content {
+    padding: 0 50px;
+  }
+}
 
 .content__hero {
   margin-bottom: 50px;
+}
+@media screen and (max-width: 1200px) {
+  .content__hero {
+    margin-bottom: 40px;
+  }
 }
 
 .hero {
@@ -770,6 +789,11 @@ template {
   background-size: cover;
   background-repeat: no-repeat;
   border-radius: 32px;
+}
+@media screen and (max-width: 1200px) {
+  .hero {
+    padding: 160px 77px 160px 77px;
+  }
 }
 
 .hero--bg--1 {
@@ -784,6 +808,13 @@ template {
   line-height: 1.21;
   font-weight: 800;
   color: var(--text-light-color);
+}
+@media screen and (max-width: 1200px) {
+  .hero__title {
+    margin-bottom: 16px;
+    font-size: 63px;
+    line-height: 1.15;
+  }
 }
 
 .heading-text {
@@ -804,6 +835,12 @@ template {
   max-width: 790px;
   margin: 0;
   margin-bottom: 90px;
+}
+@media screen and (max-width: 1200px) {
+  .hero__text {
+    margin-bottom: 60px;
+    font-size: 20px;
+  }
 }
 
 .button {
@@ -922,6 +959,11 @@ template {
 .content__about {
   margin-bottom: 100px;
 }
+@media screen and (max-width: 1200px) {
+  .content__about {
+    margin-bottom: 83px;
+  }
+}
 
 .title {
   margin: 0;
@@ -946,6 +988,11 @@ template {
   max-width: 1235px;
   margin: 0;
   margin-bottom: 50px;
+}
+@media screen and (max-width: 1200px) {
+  .about__description {
+    margin-bottom: 60px;
+  }
 }
 
 .text {
@@ -984,6 +1031,11 @@ template {
   background-position: center;
   background-size: cover;
   border-radius: 32px;
+}
+@media screen and (max-width: 1200px) {
+  .about__info-card {
+    min-height: 640px;
+  }
 }
 
 .about__info-content {
@@ -1057,6 +1109,11 @@ template {
 
 .content__order {
   margin-bottom: 109px;
+}
+@media screen and (max-width: 1200px) {
+  .content__order {
+    margin-bottom: 80px;
+  }
 }
 
 .order {
@@ -1151,6 +1208,11 @@ template {
 
 .content__faq {
   margin-bottom: 100px;
+}
+@media screen and (max-width: 1200px) {
+  .content__faq {
+    margin-bottom: 80px;
+  }
 }
 
 .faq__title {
@@ -1304,6 +1366,11 @@ template {
   color: var(--text-footer-color);
   background-color: var(--bg-footer-color);
 }
+@media screen and (max-width: 1200px) {
+  .footer {
+    padding: 50px;
+  }
+}
 
 .footer__column--content--form {
   flex-basis: 570px;
@@ -1319,6 +1386,11 @@ template {
   flex-basis: 363px;
   align-self: center;
   max-width: 363px;
+}
+@media screen and (max-width: 1200px) {
+  .footer__column--content--text {
+    display: none;
+  }
 }
 
 .footer__logo {

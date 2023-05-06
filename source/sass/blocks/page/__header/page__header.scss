@@ -1,4 +1,8 @@
 .page__header {
   position: relative;
   margin-bottom: 50px;
+
+  @media screen and (max-width: 1200px) {
+    margin-bottom: 40px;
+  }
 }

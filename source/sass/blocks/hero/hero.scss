@@ -5,4 +5,8 @@
   background-size: cover;
   background-repeat: no-repeat;
   border-radius: 32px;
+
+  @media screen and (max-width: 1200px) {
+    padding: 160px 77px 160px 77px;
+  }
 }

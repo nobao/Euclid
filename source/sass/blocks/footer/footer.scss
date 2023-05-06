@@ -5,4 +5,8 @@
   padding: 50px 75px;
   color: var(--text-footer-color);
   background-color: var(--bg-footer-color);
+
+  @media screen and (max-width: 1200px) {
+    padding: 50px;
+  }
 }

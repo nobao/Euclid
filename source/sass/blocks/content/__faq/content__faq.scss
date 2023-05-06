@@ -1,3 +1,7 @@
 .content__faq {
   margin-bottom: 100px;
+
+  @media screen and (max-width: 1200px) {
+    margin-bottom: 80px;
+  }
 }

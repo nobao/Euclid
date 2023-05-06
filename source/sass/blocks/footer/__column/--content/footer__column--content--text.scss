@@ -2,4 +2,8 @@
   flex-basis: 363px;
   align-self: center;
   max-width: 363px;
+
+  @media screen and (max-width: 1200px) {
+    display: none;
+  }
 }
