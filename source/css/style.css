@@ -438,12 +438,13 @@ template {
   border-radius: 0px 0px 32px 32px;
   box-shadow: 0px 5px 40px rgba(0, 0, 0, 0.1);
 }
-
 @media screen and (max-width: 1680px) {
   .header {
     justify-content: space-between;
+    padding: 26px 45px 26px 45px;
   }
 }
+
 @media screen and (max-width: 1200px) {
   .header__logo {
     order: 2;
@@ -456,7 +457,14 @@ template {
 }
 
 .logo--place--header {
-  max-width: 225px;
+  width: 225px;
+  height: 72px;
+}
+@media screen and (max-width: 1200px) {
+  .logo--place--header {
+    width: 150px;
+    height: 48px;
+  }
 }
 
 .logo__img {
@@ -478,6 +486,22 @@ template {
   font-size: 18px;
 }
 
+.menu--status--opened .menu__list--place--header {
+  display: flex;
+}
+.menu--status--opened .menu__toggle-icon {
+  height: 0;
+}
+.menu--status--opened .menu__toggle-icon::before, .menu--status--opened .menu__toggle-icon::after {
+  top: -1.5px;
+}
+.menu--status--opened .menu__toggle-icon::before {
+  transform: rotate(45deg);
+}
+.menu--status--opened .menu__toggle-icon::after {
+  transform: rotate(-45deg);
+}
+
 .menu__list {
   margin: 0;
   padding: 0;
@@ -488,7 +512,7 @@ template {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
-  column-gap: 76px;
+  column-gap: 72px;
 }
 @media screen and (max-width: 1200px) {
   .menu__list--place--header {
@@ -497,12 +521,16 @@ template {
     left: 0;
     z-index: 10;
     box-sizing: border-box;
+    display: none;
     flex-direction: column;
     align-items: start;
-    padding: 170px 50px 50px;
+    row-gap: 46px;
+    padding: 163px 43px 43px;
     min-width: 420px;
     min-height: 100vh;
     background-color: var(--bg-color);
+    border-radius: 0 0 32px 32px;
+    box-shadow: 0px 5px 40px rgba(0, 0, 0, 0.1);
   }
 }
 
@@ -523,7 +551,10 @@ template {
   border-color: var(--link-hover-color);
 }
 .menu__toggle:active .menu__toggle-icon {
-  fill: var(--link-active-color);
+  background-color: var(--link-active-color);
+}
+.menu__toggle:active .menu__toggle-icon::after, .menu__toggle:active .menu__toggle-icon::before {
+  background-color: var(--link-active-color);
 }
 @media screen and (max-width: 1200px) {
   .menu__toggle {
@@ -531,6 +562,27 @@ template {
     z-index: 100;
     display: block;
   }
+}
+
+.menu__toggle-icon {
+  position: relative;
+  width: 30px;
+  height: 3px;
+  background-color: var(--text-color);
+}
+.menu__toggle-icon::before, .menu__toggle-icon::after {
+  position: absolute;
+  content: "";
+  left: 0;
+  width: 30px;
+  height: 3px;
+  background-color: var(--text-color);
+}
+.menu__toggle-icon::before {
+  top: -10px;
+}
+.menu__toggle-icon::after {
+  bottom: -10px;
 }
 
 .menu__link {
@@ -545,20 +597,25 @@ template {
   line-height: 1.22;
   padding: 5px;
   color: var(--text-color);
+  border: 2px solid transparent;
 }
-
 .menu__link--place--header:hover {
   border-bottom: 2px solid var(--link-hover-color);
 }
-
 .menu__link--place--header:focus {
   border: 2px solid var(--link-hover-color);
   outline: none;
 }
-
 .menu__link--place--header:active {
   color: var(--link-active-color);
   border-bottom: 2px solid var(--link-active-color);
+}
+@media screen and (max-width: 1200px) {
+  .menu__link--place--header {
+    font-size: 24px;
+    line-height: 1.2;
+    font-weight: 700;
+  }
 }
 
 .header__search {

@@ -4,10 +4,10 @@
   padding: 14px 75px 14px 69px;
   border-radius: 0px 0px 32px 32px;
   box-shadow: 0px 5px 40px rgba(0, 0, 0, 0.1);
-}
 
-@media screen and (max-width: 1680px) {
-  .header {
+  @media screen and (max-width: 1680px) {
     justify-content: space-between;
+    padding: 26px 45px 26px 45px;
   }
 }
+

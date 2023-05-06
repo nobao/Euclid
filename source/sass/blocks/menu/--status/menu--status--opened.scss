@@ -1,0 +1,22 @@
+.menu--status--opened {
+  .menu__list--place--header {
+    display: flex;
+  }
+
+  .menu__toggle-icon {
+    height: 0;
+
+    &::before,
+    &::after {
+      top: -1.5px;
+    }
+
+    &::before {
+      transform: rotate(45deg);
+    }
+
+    &::after {
+      transform: rotate(-45deg);
+    }
+  }
+}
