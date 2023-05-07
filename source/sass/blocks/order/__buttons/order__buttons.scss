@@ -1,5 +1,6 @@
 .order__buttons {
   grid-area: buttons;
+  align-self: end;
   display: flex;
   gap: 32px;
 }

@@ -1,4 +1,8 @@
 .order__text-content {
   grid-area: text;
   margin-bottom: 18px;
+
+  @media screen and (max-width: 1200px) {
+    margin-bottom: 25px;
+  }
 }

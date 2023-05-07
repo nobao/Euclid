@@ -7,4 +7,8 @@
   margin-left: -5px;
   padding: 0;
   list-style-type: none;
+
+  @media screen and (max-width: 1200px) {
+    margin-bottom: 54px;
+  }
 }

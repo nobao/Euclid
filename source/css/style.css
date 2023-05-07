@@ -778,7 +778,7 @@ template {
 }
 @media screen and (max-width: 1200px) {
   .content__hero {
-    margin-bottom: 40px;
+    margin-bottom: 37px;
   }
 }
 
@@ -797,7 +797,22 @@ template {
 }
 
 .hero--bg--1 {
-  background-image: url(../../../images/hero-1_1920.jpg);
+  background-image: url(../../../../images/hero-1_1920.jpg);
+}
+@media screen and (-webkit-min-device-pixel-ratio: 2), screen and (min-resolution: 2dppx) {
+  .hero--bg--1 {
+    background-image: url(../../../../images/hero-1_1920@2x.jpg);
+  }
+}
+@media screen and (max-width: 1200px) {
+  .hero--bg--1 {
+    background-image: url(../../../../images/hero-1_1024.jpg);
+  }
+}
+@media screen and (max-width: 1200px) and (-webkit-min-device-pixel-ratio: 2), screen and (max-width: 1200px) and (min-resolution: 2dppx) {
+  .hero--bg--1 {
+    background-image: url(../../../../images/hero-1_1024@2x.jpg);
+  }
 }
 
 .hero__title {
@@ -961,7 +976,7 @@ template {
 }
 @media screen and (max-width: 1200px) {
   .content__about {
-    margin-bottom: 83px;
+    margin-bottom: 81px;
   }
 }
 
@@ -991,7 +1006,7 @@ template {
 }
 @media screen and (max-width: 1200px) {
   .about__description {
-    margin-bottom: 60px;
+    margin-bottom: 59px;
   }
 }
 
@@ -1073,6 +1088,11 @@ template {
   border: 1px solid var(--icon-bg-color);
   border-radius: 32px;
 }
+@media screen and (max-width: 1200px) {
+  .about__advantages-item {
+    padding: 65px 65px 63px 317px;
+  }
+}
 
 .about__advantages-item::before {
   position: absolute;
@@ -1083,6 +1103,11 @@ template {
   height: 165px;
   background-repeat: no-repeat;
   background-position: 0 0;
+}
+@media screen and (max-width: 1200px) {
+  .about__advantages-item::before {
+    left: 77px;
+  }
 }
 
 .about__advantages-title {
@@ -1122,6 +1147,11 @@ template {
   grid-template-columns: 1fr 1fr;
   column-gap: 32px;
 }
+@media screen and (max-width: 1200px) {
+  .order {
+    column-gap: 50px;
+  }
+}
 
 .order__title {
   margin-bottom: 44px;
@@ -1137,6 +1167,11 @@ template {
   margin-left: -5px;
   padding: 0;
   list-style-type: none;
+}
+@media screen and (max-width: 1200px) {
+  .order__list {
+    margin-bottom: 54px;
+  }
 }
 
 .order__number {
@@ -1173,9 +1208,15 @@ template {
   grid-area: text;
   margin-bottom: 18px;
 }
+@media screen and (max-width: 1200px) {
+  .order__text-content {
+    margin-bottom: 25px;
+  }
+}
 
 .order__buttons {
   grid-area: buttons;
+  align-self: end;
   display: flex;
   gap: 32px;
 }
@@ -1188,9 +1229,13 @@ template {
   overflow: hidden;
 }
 
+.order__picture {
+  width: 100%;
+}
+
 .order__img {
   display: block;
-  max-width: 100%;
+  width: 100%;
   object-fit: cover;
   height: 100%;
 }

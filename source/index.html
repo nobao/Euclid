@@ -244,7 +244,8 @@
       </div>
       <div class="order__image-content">
         <picture class="order__picture order__picture--order--first">
-          <source srcset="/images/step-1_1920.jpg 1x, /images/step-1_1920@2x.jpg 2x">
+          <source media="(min-width: 1201px)" srcset="/images/step-1_1920.jpg 1x, /images/step-1_1920@2x.jpg 2x">
+          <source media="(max-width: 1200px)" srcset="/images/step-1_1024.jpg 1x, /images/step-1_1024@2x.jpg 2x">
           <img class="order__img" src="/images/step-1_1920.jpg" alt="За рабочим столом люди с компьютерами и записями">
         </picture>
         <picture class="order__picture order__picture--order--second hidden">

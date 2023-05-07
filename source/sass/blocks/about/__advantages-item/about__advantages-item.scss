@@ -3,6 +3,10 @@
   padding: 65px 65px 61px 296px;
   border: 1px solid var(--icon-bg-color);
   border-radius: 32px;
+
+  @media screen and (max-width: 1200px) {
+    padding: 65px 65px 63px 317px;
+  }
 }
 
 .about__advantages-item::before {
@@ -14,4 +18,8 @@
   height: 165px;
   background-repeat: no-repeat;
   background-position: 0 0;
+
+  @media screen and (max-width: 1200px) {
+    left: 77px;
+  }
 }
