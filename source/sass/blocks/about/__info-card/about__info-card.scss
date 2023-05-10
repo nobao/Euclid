@@ -2,13 +2,22 @@
   position: relative;
   min-height: 622px;
   background-color: #89675a;
-  background-image: url(../../../images/about_1920.jpg);
+  background-image: url(../../../../images/about_1920.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
   border-radius: 32px;
 
+  @media (min-resolution: 2dppx ) {
+    background-image: url(../../../../images/about_1920@2x.jpg);
+  }
+
   @media screen and (max-width: 1200px) {
     min-height: 640px;
+    background-image: url(../../../../images/about_1024.jpg);
+
+    @media (min-resolution: 2dppx ) {
+      background-image: url(../../../../images/about_1024@2x.jpg);
+    }
   }
 }

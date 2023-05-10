@@ -1,7 +1,9 @@
 .faq__heading {
-  display: block;
+  display: flex;
+  align-items: center;
   position: relative;
-  padding-right: 70px;
+  min-height: 50px;
+  padding-right: 150px;
   color: var(--text-color);
   text-decoration: none;
   outline: none;

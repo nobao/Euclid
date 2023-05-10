@@ -1,15 +1,17 @@
 .hero--bg--1 {
   background-image: url(../../../../images/hero-1_1920.jpg);
 
-  @media screen and (min-resolution: 2dppx) {
+  @media (min-resolution: 2dppx) {
     background-image: url(../../../../images/hero-1_1920@2x.jpg);
   }
 
   @media screen and (max-width: 1200px) {
     background-image: url(../../../../images/hero-1_1024.jpg);
+
+    @media (min-resolution: 2dppx) {
+      background-image: url(../../../../images/hero-1_1024@2x.jpg);
+    }
   }
 
-  @media screen and (max-width: 1200px) and (min-resolution: 2dppx) {
-    background-image: url(../../../../images/hero-1_1024@2x.jpg);
-  }
+
 }

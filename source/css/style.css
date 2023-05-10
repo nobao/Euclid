@@ -644,7 +644,7 @@ template {
 .search__open-button {
   box-sizing: border-box;
   padding: 5px;
-  margin-right: -5px;
+  margin-right: 0;
   border: none;
   background-color: var(--color-transparent);
   cursor: pointer;
@@ -792,14 +792,14 @@ template {
 }
 @media screen and (max-width: 1200px) {
   .hero {
-    padding: 160px 77px 160px 77px;
+    padding: 163px 77px 160px 77px;
   }
 }
 
 .hero--bg--1 {
   background-image: url(../../../../images/hero-1_1920.jpg);
 }
-@media screen and (-webkit-min-device-pixel-ratio: 2), screen and (min-resolution: 2dppx) {
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 2dppx) {
   .hero--bg--1 {
     background-image: url(../../../../images/hero-1_1920@2x.jpg);
   }
@@ -827,8 +827,8 @@ template {
 @media screen and (max-width: 1200px) {
   .hero__title {
     margin-bottom: 16px;
-    font-size: 63px;
-    line-height: 1.15;
+    font-size: 60px;
+    line-height: 1.2;
   }
 }
 
@@ -873,6 +873,11 @@ template {
 
 .button--size--l {
   padding: 19px 52px;
+}
+@media screen and (max-width: 1200px) {
+  .button--size--l {
+    padding: 19px 38px;
+  }
 }
 
 .button--size--s {
@@ -1036,20 +1041,36 @@ template {
   grid-template-columns: repeat(auto-fit, minmax(597px, 1fr));
   gap: 33px;
 }
+@media screen and (max-width: 1200px) {
+  .about__wrapper {
+    gap: 31px;
+  }
+}
 
 .about__info-card {
   position: relative;
   min-height: 622px;
   background-color: #89675a;
-  background-image: url(../../../images/about_1920.jpg);
+  background-image: url(../../../../images/about_1920.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
   border-radius: 32px;
 }
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 2dppx) {
+  .about__info-card {
+    background-image: url(../../../../images/about_1920@2x.jpg);
+  }
+}
 @media screen and (max-width: 1200px) {
   .about__info-card {
     min-height: 640px;
+    background-image: url(../../../../images/about_1024.jpg);
+  }
+}
+@media screen and (max-width: 1200px) and (-webkit-min-device-pixel-ratio: 2), screen and (max-width: 1200px) and (min-resolution: 2dppx) {
+  .about__info-card {
+    background-image: url(../../../../images/about_1024@2x.jpg);
   }
 }
 
@@ -1107,6 +1128,7 @@ template {
 @media screen and (max-width: 1200px) {
   .about__advantages-item::before {
     left: 77px;
+    top: 64px;
   }
 }
 
@@ -1256,7 +1278,7 @@ template {
 }
 @media screen and (max-width: 1200px) {
   .content__faq {
-    margin-bottom: 80px;
+    margin-bottom: 82px;
   }
 }
 
@@ -1273,7 +1295,7 @@ template {
 
 .faq__item {
   position: relative;
-  padding: 42px 0 37px 0;
+  padding: 30px 0 30px 0;
 }
 
 .faq__item::before,
@@ -1331,9 +1353,11 @@ template {
 }
 
 .faq__heading {
-  display: block;
+  display: flex;
+  align-items: center;
   position: relative;
-  padding-right: 70px;
+  min-height: 50px;
+  padding-right: 150px;
   color: var(--text-color);
   text-decoration: none;
   outline: none;
@@ -1360,6 +1384,12 @@ template {
   margin: 0;
   line-height: 1.33;
   color: inherit;
+}
+@media screen and (max-width: 1200px) {
+  .faq__question {
+    font-size: 20px;
+    line-height: 1.6;
+  }
 }
 
 .faq__toggle {
@@ -1463,6 +1493,11 @@ template {
   padding: 5px;
   color: var(--text-footer-color);
   border: 2px solid transparent;
+}
+@media screen and (max-width: 1200px) {
+  .menu__link--place--footer {
+    line-height: 1.13;
+  }
 }
 
 .menu__link--place--footer:hover {
