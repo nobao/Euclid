@@ -4,4 +4,9 @@
   background-color: var(--icon-bg-color);
   border-radius: 50%;
   cursor: pointer;
+
+  @media screen and (max-width: 576px) {
+    width: 10px;
+    height: 10px;
+  }
 }
