@@ -1,0 +1,31 @@
+.hero--bg--3 {
+  background-image: url(../../../../images/hero-3_1920.jpg);
+
+  @media (min-resolution: 2dppx) {
+    background-image: url(../../../../images/hero-3_1920@2x.jpg);
+  }
+
+  @media screen and (max-width: 1200px) {
+    background-image: url(../../../../images/hero-3_1024.jpg);
+
+    @media (min-resolution: 2dppx) {
+      background-image: url(../../../../images/hero-3_1024@2x.jpg);
+    }
+  }
+
+  @media screen and (max-width: 992px) {
+    background-image: url(../../../../images/hero-3_768.jpg);
+
+    @media (min-resolution: 2dppx) {
+      background-image: url(../../../../images/hero-3_768@2x.jpg);
+    }
+  }
+
+  @media screen and (max-width: 576px) {
+    background-image: url(../../../../images/hero-3_320.jpg);
+
+    @media (min-resolution: 2dppx) {
+      background-image: url(../../../../images/hero-3_320@2x.jpg);
+    }
+  }
+}

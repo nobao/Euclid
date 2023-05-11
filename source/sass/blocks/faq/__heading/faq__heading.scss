@@ -7,21 +7,34 @@
   color: var(--text-color);
   text-decoration: none;
   outline: none;
-}
 
-.faq__heading:hover,
-.faq__heading:focus {
-  color: var(--link-hover-color);
-}
+  @media screen and (max-width: 992px) {
+    padding-right: 95px;
+  }
 
-.faq__heading:hover .faq__toggle,
-.faq__heading:focus .faq__toggle {
-  background-color: var(--link-hover-color);
-}
+  &:hover {
+    color: var(--link-hover-color);
 
-.faq__heading:hover .faq__toggle::before,
-.faq__heading:hover .faq__toggle::after,
-.faq__heading:focus .faq__toggle::before,
-.faq__heading:focus .faq__toggle::after {
-  background-color: var(--bg-color);
+    .faq__toggle {
+      background-color: var(--link-hover-color);
+
+      &::before,
+      &::after {
+        background-color: var(--bg-color);
+      }
+    }
+  }
+
+  &:focus {
+    color: var(--link-hover-color);
+
+    .faq__toggle {
+      background-color: var(--link-hover-color);
+
+      &::before,
+      &::after {
+        background-color: var(--bg-color);
+      }
+    }
+  }
 }

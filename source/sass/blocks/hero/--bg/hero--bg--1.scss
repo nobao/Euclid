@@ -13,5 +13,19 @@
     }
   }
 
+  @media screen and (max-width: 992px) {
+    background-image: url(../../../../images/hero-1_768.jpg);
 
+    @media (min-resolution: 2dppx) {
+      background-image: url(../../../../images/hero-1_768@2x.jpg);
+    }
+  }
+
+  @media screen and (max-width: 576px) {
+    background-image: url(../../../../images/hero-1_320.jpg);
+
+    @media (min-resolution: 2dppx) {
+      background-image: url(../../../../images/hero-1_320@2x.jpg);
+    }
+  }
 }

@@ -9,4 +9,8 @@
     order: 3;
   }
 
+  @media screen and (max-width: 992px) {
+    margin-right: -5px;
+  }
+
 }

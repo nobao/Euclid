@@ -1,9 +1,11 @@
 .header__menu {
   margin-left: auto;
-}
 
-@media screen and (max-width: 1618px) {
-  .header__menu {
+  @media screen and (max-width: 1618px) {
     margin-left: 0;
+  }
+
+  @media screen and (max-width: 992px) {
+    margin-left: -5px;
   }
 }

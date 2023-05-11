@@ -2,4 +2,9 @@
   display: flex;
   flex-direction: column;
   flex-basis: 363px;
+
+  @media screen and (max-width: 992px) {
+    order: 2;
+    flex-basis: 0;
+  }
 }
