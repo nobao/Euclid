@@ -1,3 +1,7 @@
 .about__advantages-item--position--second::before {
-  background-image: url(../../../../images/about-1.svg);
+  background-image: url(../../../../../images/about-1.svg);
+
+  @media screen and (max-width: 576px) {
+    background-image: url(../../../../../images/about-1_320.svg);
+  }
 }

@@ -33,8 +33,11 @@
   }
 
   @media screen and (max-width: 576px) {
+    height: auto;
     min-height: 200px;
+    margin-bottom: 8px;
     background-image: url(../../../../images/about_320.jpg);
+    background-position: center 0;
     border-radius: 16px;
 
     @media (min-resolution: 2dppx ) {

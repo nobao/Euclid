@@ -6,4 +6,12 @@
   @media screen and (max-width: 992px) {
     margin-right: 45px;
   }
+
+  @media screen and (max-width: 576px) {
+    margin-bottom: 12px;
+    color: var(--text-color);
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 2;
+  }
 }

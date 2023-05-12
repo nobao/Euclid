@@ -941,6 +941,13 @@ template {
   font-size: 24px;
   line-height: 1.2;
 }
+@media screen and (max-width: 576px) {
+  .heading-text {
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 1.22;
+  }
+}
 
 .heading-text--color--white {
   color: var(--text-light-color);
@@ -1010,8 +1017,16 @@ template {
   padding: 20px 38px;
 }
 
-.button--size--xs {
+.button--size--xs.about__button {
   padding: 17px 35px;
+}
+@media screen and (max-width: 576px) {
+  .button--size--xs.about__button {
+    padding: 12px 44px;
+    font-size: 12px;
+    line-height: 1.25;
+    color: var(--button-bg-color);
+  }
 }
 
 .button--bg--color {
@@ -1225,6 +1240,11 @@ template {
 .about__info-card {
   position: relative;
 }
+@media screen and (max-width: 576px) {
+  .about__info-card {
+    margin-bottom: 32px;
+  }
+}
 
 .about__image {
   width: 100%;
@@ -1267,8 +1287,11 @@ template {
 }
 @media screen and (max-width: 576px) {
   .about__image {
+    height: auto;
     min-height: 200px;
+    margin-bottom: 8px;
     background-image: url(../../../../images/about_320.jpg);
+    background-position: center 0;
     border-radius: 16px;
   }
 }
@@ -1299,6 +1322,10 @@ template {
 @media screen and (max-width: 576px) {
   .about__info-content {
     position: static;
+    flex-direction: column;
+    align-items: start;
+    padding: 0;
+    background-color: var(--bg-color);
   }
 }
 
@@ -1310,6 +1337,15 @@ template {
 @media screen and (max-width: 992px) {
   .about__text {
     margin-right: 45px;
+  }
+}
+@media screen and (max-width: 576px) {
+  .about__text {
+    margin-bottom: 12px;
+    color: var(--text-color);
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 2;
   }
 }
 
@@ -1339,6 +1375,12 @@ template {
     border-radius: 24px;
   }
 }
+@media screen and (max-width: 576px) {
+  .about__advantages-item {
+    padding: 61px 0 0 0;
+    border: none;
+  }
+}
 .about__advantages-item::before {
   position: absolute;
   content: "";
@@ -1364,6 +1406,14 @@ template {
     height: 99px;
   }
 }
+@media screen and (max-width: 576px) {
+  .about__advantages-item::before {
+    top: 0;
+    left: 0;
+    width: 64px;
+    height: 49px;
+  }
+}
 
 .about__advantages-title {
   margin: 0;
@@ -1380,11 +1430,21 @@ template {
 }
 
 .about__advantages-item--position--first::before {
-  background-image: url(../../../../images/about-2.svg);
+  background-image: url(../../../../../images/about-2.svg);
+}
+@media screen and (max-width: 576px) {
+  .about__advantages-item--position--first::before {
+    background-image: url(../../../../../images/about-2_320.svg);
+  }
 }
 
 .about__advantages-item--position--second::before {
-  background-image: url(../../../../images/about-1.svg);
+  background-image: url(../../../../../images/about-1.svg);
+}
+@media screen and (max-width: 576px) {
+  .about__advantages-item--position--second::before {
+    background-image: url(../../../../../images/about-1_320.svg);
+  }
 }
 
 .content__order {
@@ -1429,6 +1489,11 @@ template {
   margin-bottom: 44px;
   grid-area: title;
 }
+@media screen and (max-width: 576px) {
+  .order__title {
+    margin-bottom: 20px;
+  }
+}
 
 .order__list {
   display: flex;
@@ -1452,6 +1517,13 @@ template {
     margin-bottom: 44px;
   }
 }
+@media screen and (max-width: 576px) {
+  .order__list {
+    gap: 0;
+    margin: 0;
+    margin-bottom: 16px;
+  }
+}
 
 .order__number {
   padding: 5px;
@@ -1462,17 +1534,20 @@ template {
   cursor: pointer;
   outline: none;
 }
-
+@media screen and (max-width: 576px) {
+  .order__number {
+    font-size: 14px;
+    line-height: 1.21;
+  }
+}
 .order__number:hover {
   color: var(--link-hover-color);
 }
-
 .order__number:focus {
   padding: 3px;
   color: var(--text-color);
   border: 2px solid var(--button-bg-color);
 }
-
 .order__number:active {
   padding: 5px;
   color: var(--button-active-bg-color);
@@ -1495,6 +1570,12 @@ template {
 @media screen and (max-width: 992px) {
   .order__text-content {
     margin-top: 48px;
+  }
+}
+@media screen and (max-width: 576px) {
+  .order__text-content {
+    margin-top: 16px;
+    margin-bottom: 25px;
   }
 }
 

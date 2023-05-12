@@ -6,20 +6,25 @@
   border: none;
   cursor: pointer;
   outline: none;
-}
 
-.order__number:hover {
-  color: var(--link-hover-color);
-}
+  @media screen and (max-width: 576px) {
+    font-size: 14px;
+    line-height: 1.21;
+  }
 
-.order__number:focus {
-  padding: 3px;
-  color: var(--text-color);
-  border: 2px solid var(--button-bg-color);
-}
+  &:hover {
+    color: var(--link-hover-color);
+  }
 
-.order__number:active {
-  padding: 5px;
-  color: var(--button-active-bg-color);
-  border: none;
+  &:focus {
+    padding: 3px;
+    color: var(--text-color);
+    border: 2px solid var(--button-bg-color);
+  }
+
+  &:active {
+    padding: 5px;
+    color: var(--button-active-bg-color);
+    border: none;
+  }
 }
