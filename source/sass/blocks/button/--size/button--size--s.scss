@@ -1,3 +1,7 @@
 .button--size--s {
   padding: 20px 38px;
+
+  @media screen and (max-width: 576px) {
+    padding: 12px 44px;
+  }
 }

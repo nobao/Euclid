@@ -9,24 +9,30 @@
   border-radius: 50%;
   background-color: var(--icon-bg-color);
   cursor: pointer;
+
+  @media screen and (max-width: 576px) {
+    width: 30px;
+    height: 30px;
+  }
+
+  &::before,
+  &::after {
+    position: absolute;
+    content: '';
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: var(--text-color);
+  }
+
+  &::before {
+    width: 18.6px;
+    height: 1px;
+  }
+
+  &::after {
+    width: 1px;
+    height: 18.6px;
+  }
 }
 
-.faq__toggle::before,
-.faq__toggle::after {
-  position: absolute;
-  content: '';
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  background-color: var(--text-color);
-}
-
-.faq__toggle::before {
-  width: 31px;
-  height: 1px;
-}
-
-.faq__toggle::after {
-  width: 1px;
-  height: 31px;
-}

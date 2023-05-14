@@ -14,4 +14,9 @@
     flex-direction: column;
     align-items: start;
   }
+
+  @media screen and (max-width: 576px) {
+    align-items: center;
+    padding: 33px 15px 30px 14px;
+  }
 }

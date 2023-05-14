@@ -8,4 +8,10 @@
     margin-bottom: 50px;
     max-width: 541px;
   }
+
+  @media screen and (max-width: 576px) {
+    margin-bottom: 16px;
+    padding-bottom: 16px;
+    border-bottom: 1px solid var(--input-bg-color);
+  }
 }

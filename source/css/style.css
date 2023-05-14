@@ -413,10 +413,6 @@ template {
   overflow: hidden;
 }
 
-.hidden {
-  display: none;
-}
-
 .page {
   max-width: 1920px;
   min-width: 320px;
@@ -545,6 +541,12 @@ template {
   transform: rotate(-45deg);
 }
 
+@media screen and (max-width: 1200px) {
+  .menu--status--closed .menu__list--place--header {
+    display: none;
+  }
+}
+
 .menu__list {
   margin: 0;
   padding: 0;
@@ -564,7 +566,6 @@ template {
     left: 0;
     z-index: 10;
     box-sizing: border-box;
-    display: none;
     flex-direction: column;
     align-items: start;
     row-gap: 46px;
@@ -736,7 +737,7 @@ template {
   z-index: 1000;
   box-sizing: border-box;
   min-width: 539px;
-  display: none;
+  display: flex;
   align-items: center;
   padding: 14px 9px 14px 32px;
   background-color: var(--bg-color);
@@ -931,6 +932,7 @@ template {
 }
 @media screen and (max-width: 576px) {
   .hero__title {
+    margin-bottom: 8px;
     font-size: 20px;
     line-height: 1.2;
   }
@@ -976,7 +978,9 @@ template {
 }
 @media screen and (max-width: 576px) {
   .hero__text {
+    margin-bottom: 33px;
     font-size: 12px;
+    font-weight: 700;
     line-height: 1.25;
   }
 }
@@ -1012,9 +1016,19 @@ template {
     padding: 19px 38px;
   }
 }
+@media screen and (max-width: 576px) {
+  .button--size--l {
+    padding: 12px 28px;
+  }
+}
 
 .button--size--s {
   padding: 20px 38px;
+}
+@media screen and (max-width: 576px) {
+  .button--size--s {
+    padding: 12px 44px;
+  }
 }
 
 .button--size--xs.about__button {
@@ -1022,7 +1036,7 @@ template {
 }
 @media screen and (max-width: 576px) {
   .button--size--xs.about__button {
-    padding: 12px 44px;
+    padding: 10px 42px;
     font-size: 12px;
     line-height: 1.25;
     color: var(--button-bg-color);
@@ -1065,14 +1079,22 @@ template {
   border: 1px solid var(--text-color);
   background-color: var(--button-transparent-bg-color);
 }
-
-.button--text--black:hover,
+@media screen and (max-width: 576px) {
+  .button--text--black {
+    padding: 11px 31px;
+    font-size: 12px;
+  }
+}
+.button--text--black:hover {
+  color: var(--text-light-color);
+  border-color: var(--button-grey-hover-bg-color);
+  background-color: var(--button-grey-hover-bg-color);
+}
 .button--text--black:focus {
   color: var(--text-light-color);
   border-color: var(--button-grey-hover-bg-color);
   background-color: var(--button-grey-hover-bg-color);
 }
-
 .button--text--black:active {
   color: var(--text-light-color);
   border-color: var(--button-grey-active-bg-color);
@@ -1084,6 +1106,11 @@ template {
   font-size: 16px;
   line-height: 1.25;
   color: var(--text-light-color);
+}
+@media screen and (max-width: 576px) {
+  .button--text--white {
+    font-size: 12px;
+  }
 }
 
 .button--text--big {
@@ -1177,6 +1204,11 @@ template {
 .about__title {
   margin-bottom: 20px;
 }
+@media screen and (max-width: 576px) {
+  .about__title {
+    margin-bottom: 19px;
+  }
+}
 
 .about__description {
   max-width: 1235px;
@@ -1242,7 +1274,7 @@ template {
 }
 @media screen and (max-width: 576px) {
   .about__info-card {
-    margin-bottom: 32px;
+    margin-bottom: 0px;
   }
 }
 
@@ -1341,6 +1373,7 @@ template {
 }
 @media screen and (max-width: 576px) {
   .about__text {
+    margin: 0;
     margin-bottom: 12px;
     color: var(--text-color);
     font-weight: 400;
@@ -1419,6 +1452,11 @@ template {
   margin: 0;
   margin-bottom: 8px;
 }
+@media screen and (max-width: 576px) {
+  .about__advantages-title {
+    margin-bottom: 4px;
+  }
+}
 
 .about__advantages-text {
   margin: 0;
@@ -1491,7 +1529,7 @@ template {
 }
 @media screen and (max-width: 576px) {
   .order__title {
-    margin-bottom: 20px;
+    margin-bottom: 16px;
   }
 }
 
@@ -1520,8 +1558,7 @@ template {
 @media screen and (max-width: 576px) {
   .order__list {
     gap: 0;
-    margin: 0;
-    margin-bottom: 16px;
+    margin-bottom: 10px;
   }
 }
 
@@ -1574,8 +1611,8 @@ template {
 }
 @media screen and (max-width: 576px) {
   .order__text-content {
-    margin-top: 16px;
-    margin-bottom: 25px;
+    margin-top: 29px;
+    margin-bottom: 26px;
   }
 }
 
@@ -1583,7 +1620,15 @@ template {
   grid-area: buttons;
   align-self: end;
   display: flex;
-  gap: 32px;
+  align-items: center;
+  flex-wrap: wrap;
+  column-gap: 32px;
+  row-gap: 20px;
+}
+@media screen and (max-width: 576px) {
+  .order__buttons {
+    column-gap: 10px;
+  }
 }
 
 .order__image-content {
@@ -1596,6 +1641,11 @@ template {
 @media screen and (max-width: 992px) {
   .order__image-content {
     border-radius: 24px;
+  }
+}
+@media screen and (max-width: 576px) {
+  .order__image-content {
+    border-radius: 16px;
   }
 }
 
@@ -1614,6 +1664,11 @@ template {
   margin-top: -8px;
   margin-bottom: 8px;
   line-height: 1.33;
+}
+@media screen and (max-width: 576px) {
+  .order__heading {
+    margin-bottom: 11px;
+  }
 }
 
 .order__description {
@@ -1643,6 +1698,11 @@ template {
 .faq__title {
   margin: 0;
   margin-bottom: 32px;
+}
+@media screen and (max-width: 576px) {
+  .faq__title {
+    margin-bottom: 16px;
+  }
 }
 
 .faq__list {
@@ -1725,6 +1785,11 @@ template {
     padding-right: 95px;
   }
 }
+@media screen and (max-width: 576px) {
+  .faq__heading {
+    padding-right: 40px;
+  }
+}
 .faq__heading:hover {
   color: var(--link-hover-color);
 }
@@ -1755,6 +1820,12 @@ template {
     line-height: 1.6;
   }
 }
+@media screen and (max-width: 576px) {
+  .faq__question {
+    font-size: 14px;
+    line-height: 1.71;
+  }
+}
 
 .faq__toggle {
   position: absolute;
@@ -1768,9 +1839,13 @@ template {
   background-color: var(--icon-bg-color);
   cursor: pointer;
 }
-
-.faq__toggle::before,
-.faq__toggle::after {
+@media screen and (max-width: 576px) {
+  .faq__toggle {
+    width: 30px;
+    height: 30px;
+  }
+}
+.faq__toggle::before, .faq__toggle::after {
   position: absolute;
   content: "";
   top: 50%;
@@ -1778,15 +1853,13 @@ template {
   transform: translate(-50%, -50%);
   background-color: var(--text-color);
 }
-
 .faq__toggle::before {
-  width: 31px;
+  width: 18.6px;
   height: 1px;
 }
-
 .faq__toggle::after {
   width: 1px;
-  height: 31px;
+  height: 18.6px;
 }
 
 .faq__answer {
@@ -1795,6 +1868,11 @@ template {
   margin-top: 30px;
   padding-right: 70px;
   max-width: 1003px;
+}
+@media screen and (max-width: 576px) {
+  .faq__answer {
+    padding-right: 40px;
+  }
 }
 
 .footer {
@@ -1816,6 +1894,12 @@ template {
     align-items: start;
   }
 }
+@media screen and (max-width: 576px) {
+  .footer {
+    align-items: center;
+    padding: 33px 15px 30px 14px;
+  }
+}
 
 .footer__column--content--form {
   flex-basis: 570px;
@@ -1829,6 +1913,13 @@ template {
     max-width: 541px;
   }
 }
+@media screen and (max-width: 576px) {
+  .footer__column--content--form {
+    margin-bottom: 16px;
+    padding-bottom: 16px;
+    border-bottom: 1px solid var(--input-bg-color);
+  }
+}
 
 .footer__column--content--menu {
   display: flex;
@@ -1839,6 +1930,11 @@ template {
   .footer__column--content--menu {
     order: 2;
     flex-basis: 0;
+  }
+}
+@media screen and (max-width: 576px) {
+  .footer__column--content--menu {
+    align-items: center;
   }
 }
 
@@ -1861,9 +1957,20 @@ template {
     margin-bottom: 11px;
   }
 }
+@media screen and (max-width: 576px) {
+  .footer__logo {
+    margin-bottom: 11px;
+  }
+}
 
 .logo--place--footer {
-  max-width: 224px;
+  width: 224px;
+}
+@media screen and (max-width: 576px) {
+  .logo--place--footer {
+    width: 131px;
+    height: 42px;
+  }
 }
 
 .footer__menu {
@@ -1879,6 +1986,11 @@ template {
   .footer__social {
     margin-bottom: 0;
     margin-left: -5px;
+  }
+}
+@media screen and (max-width: 576px) {
+  .footer__social {
+    margin-left: 0;
   }
 }
 
@@ -1922,6 +2034,11 @@ template {
   padding: 0;
   list-style-type: none;
 }
+@media screen and (max-width: 576px) {
+  .social {
+    gap: 8px;
+  }
+}
 
 .social__link {
   display: inline-block;
@@ -1947,6 +2064,12 @@ template {
   width: 60px;
   height: 60px;
 }
+@media screen and (max-width: 576px) {
+  .social__icon {
+    width: 40px;
+    height: 40px;
+  }
+}
 
 .form__fieldset {
   display: flex;
@@ -1959,6 +2082,11 @@ template {
 .form__title {
   margin-top: 0;
   margin-bottom: 25px;
+}
+@media screen and (max-width: 576px) {
+  .form__title {
+    margin-bottom: 20px;
+  }
 }
 
 .form__label {
@@ -1979,7 +2107,11 @@ template {
   border-radius: 16px;
   outline: none;
 }
-
+@media screen and (max-width: 576px) {
+  .form__input {
+    padding: 14px 20px;
+  }
+}
 .form__input::placeholder {
   font-family: var(--font-family);
   font-size: 16px;
@@ -1987,15 +2119,17 @@ template {
   font-weight: normal;
   color: var(--text-placeholder-color);
 }
-
+@media screen and (max-width: 576px) {
+  .form__input::placeholder {
+    font-size: 14px;
+  }
+}
 .form__input:hover {
   background-color: var(--input-focus-bg-color);
 }
-
 .form__input:focus {
   background-color: var(--input-focus-bg-color);
 }
-
 .form__input:active {
   background-color: var(--input-focus-bg-color);
 }
@@ -2007,5 +2141,14 @@ template {
 .form__submit {
   align-self: center;
   margin-top: 3px;
+}
+@media screen and (max-width: 576px) {
+  .form__submit {
+    margin-top: -3px;
+  }
+}
+
+.hidden {
+  display: none;
 }
 /*# sourceMappingURL=style.css.map */

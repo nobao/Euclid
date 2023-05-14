@@ -2,7 +2,6 @@
 @use './vendor/variables.scss';
 @use './vendor/fonts.scss';
 @use './blocks/visually-hidden/visually-hidden.scss';
-@use './blocks/hidden/hidden.scss';
 @use './blocks/page/page.scss';
 @use './blocks/page/__header/page__header.scss';
 @use './blocks/header/header.scss';
@@ -15,6 +14,8 @@
 @use './blocks/menu/--place/menu--place--header.scss';
 @use './blocks/menu/--place/menu--place--footer.scss';
 @use './blocks/menu/--status/menu--status--opened.scss';
+@use './blocks/menu/--status/menu--status--closed.scss';
+@use './blocks/menu/--status/menu--status--nojs.scss';
 @use './blocks/menu/__list/menu__list.scss';
 @use './blocks/menu/__list/--place/menu__list--place--header.scss';
 @use './blocks/menu/__toggle/menu__toggle.scss';
@@ -121,6 +122,7 @@
 @use './blocks/form/__label/form__label.scss';
 @use './blocks/form/__input/form__input.scss';
 @use './blocks/form/__input/--type/form__input--type--textarea.scss';
-@use './blocks/form/__submit/form__submit.scss'
+@use './blocks/form/__submit/form__submit.scss';
+@use './blocks/hidden/hidden.scss';
 
 // Начните писать стили здесь

@@ -1,3 +1,8 @@
 .logo--place--footer {
-  max-width: 224px;
+  width: 224px;
+
+  @media screen and (max-width: 576px) {
+    width: 131px;
+    height: 42px;
+  }
 }

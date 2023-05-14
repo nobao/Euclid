@@ -11,24 +11,34 @@
   border: none;
   border-radius: 16px;
   outline: none;
+
+  @media screen and (max-width: 576px) {
+    padding: 14px 20px;
+  }
+
+  &::placeholder {
+    font-family: var(--font-family);
+    font-size: 16px;
+    line-height: 2;
+    font-weight: normal;
+    color: var(--text-placeholder-color);
+
+    @media screen and (max-width: 576px) {
+      font-size: 14px;
+    }
+  }
+
+  &:hover {
+    background-color: var(--input-focus-bg-color);
+  }
+
+  &:focus {
+    background-color: var(--input-focus-bg-color);
+  }
+
+  &:active {
+    background-color: var(--input-focus-bg-color);
+  }
 }
 
-.form__input::placeholder {
-  font-family: var(--font-family);
-  font-size: 16px;
-  line-height: 2;
-  font-weight: normal;
-  color: var(--text-placeholder-color);
-}
 
-.form__input:hover {
-  background-color: var(--input-focus-bg-color);
-}
-
-.form__input:focus {
-  background-color: var(--input-focus-bg-color);
-}
-
-.form__input:active {
-  background-color: var(--input-focus-bg-color);
-}

@@ -2,5 +2,12 @@
   grid-area: buttons;
   align-self: end;
   display: flex;
-  gap: 32px;
+  align-items: center;
+  flex-wrap: wrap;
+  column-gap: 32px;
+  row-gap: 20px;
+
+  @media screen and (max-width: 576px) {
+    column-gap: 10px;
+  }
 }

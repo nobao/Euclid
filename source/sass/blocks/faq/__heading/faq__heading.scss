@@ -12,6 +12,10 @@
     padding-right: 95px;
   }
 
+  @media screen and (max-width: 576px) {
+    padding-right: 40px;
+  }
+
   &:hover {
     color: var(--link-hover-color);
 
