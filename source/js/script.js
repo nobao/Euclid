@@ -27,3 +27,13 @@ searchCloseButton.addEventListener('click', function () {
   searchForm.classList.add('hidden');
 }
 )
+
+// слайдер в блоке Hero
+let heroSliderDot = document.querySelectorAll('.hero__slider-dot');
+let hero = document.querySelector('.hero');
+
+heroSliderDot.addEventListener('click', function () {
+  heroSliderDot.forEach((el) => {
+    console.log(el);
+  })
+})
