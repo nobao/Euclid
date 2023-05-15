@@ -11,11 +11,22 @@
   border: none;
   border-bottom: 1px solid var(--text-placeholder-color);
   outline: none;
+
+  @media screen and (max-width: 576px) {
+    width: auto;
+    flex-grow: 1;
+    margin-right: -6px;
+  }
+
+  &::placeholder {
+    font-size: 18px;
+    line-height: 1;
+    font-weight: 500;
+    color: var(--text-placeholder-color);
+
+    @media screen and (max-width: 576px) {
+      font-size: 16px;
+    }
+  }
 }
 
-.search__input::placeholder {
-  font-size: 18px;
-  line-height: 1;
-  font-weight: 500;
-  color: var(--text-placeholder-color);
-}

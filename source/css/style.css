@@ -579,7 +579,16 @@ template {
 }
 @media screen and (max-width: 992px) {
   .menu__list--place--header {
+    padding: 147px 46px 46px;
+    row-gap: 47px;
     border-radius: 0 0 24px 24px;
+  }
+}
+@media screen and (max-width: 576px) {
+  .menu__list--place--header {
+    padding: 72px 13px 13px;
+    row-gap: 18px;
+    border-radius: 0 0 16px 16px;
   }
 }
 
@@ -666,6 +675,12 @@ template {
     font-weight: 700;
   }
 }
+@media screen and (max-width: 576px) {
+  .menu__link--place--header {
+    font-size: 16px;
+    line-height: 1.25;
+  }
+}
 
 .header__search {
   margin-left: 250px;
@@ -745,6 +760,23 @@ template {
   border-radius: 24px;
   transform: translateY(-50%);
 }
+@media screen and (max-width: 992px) {
+  .search__form {
+    right: 0;
+  }
+}
+@media screen and (max-width: 576px) {
+  .search__form {
+    left: 0;
+    bottom: 0;
+    top: 0;
+    min-width: auto;
+    padding: 19px 15px 21px 14px;
+    box-shadow: none;
+    border-radius: 0px 0px 24px 24px;
+    transform: none;
+  }
+}
 
 .search__input {
   box-sizing: border-box;
@@ -760,12 +792,23 @@ template {
   border-bottom: 1px solid var(--text-placeholder-color);
   outline: none;
 }
-
+@media screen and (max-width: 576px) {
+  .search__input {
+    width: auto;
+    flex-grow: 1;
+    margin-right: -6px;
+  }
+}
 .search__input::placeholder {
   font-size: 18px;
   line-height: 1;
   font-weight: 500;
   color: var(--text-placeholder-color);
+}
+@media screen and (max-width: 576px) {
+  .search__input::placeholder {
+    font-size: 16px;
+  }
 }
 
 .search__submit {
@@ -775,6 +818,11 @@ template {
   outline: none;
   border: 2px solid var(--button-transparent-bg-color);
   cursor: pointer;
+}
+@media screen and (max-width: 576px) {
+  .search__submit {
+    align-self: flex-start;
+  }
 }
 .search__submit:focus {
   border-color: var(--link-hover-color);
@@ -791,6 +839,11 @@ template {
   padding: 2px 2px 0 2px;
   background: none;
   border: 2px solid var(--button-transparent-bg-color);
+}
+@media screen and (max-width: 576px) {
+  .search__close-button {
+    align-self: flex-start;
+  }
 }
 .search__close-button:hover .search__close-icon circle {
   stroke: var(--link-hover-color);

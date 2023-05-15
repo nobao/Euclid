@@ -4,6 +4,10 @@
   background: none;
   border: 2px solid var(--button-transparent-bg-color);
 
+  @media screen and (max-width: 576px) {
+    align-self: flex-start;
+  }
+
   &:hover .search__close-icon {
     circle {
       stroke: var(--link-hover-color);

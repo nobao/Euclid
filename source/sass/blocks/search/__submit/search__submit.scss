@@ -6,6 +6,10 @@
   border: 2px solid var(--button-transparent-bg-color);
   cursor: pointer;
 
+  @media screen and (max-width: 576px) {
+    align-self: flex-start;
+  }
+
   &:focus {
   border-color: var(--link-hover-color);
 

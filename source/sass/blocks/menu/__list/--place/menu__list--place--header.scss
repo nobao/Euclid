@@ -22,6 +22,14 @@
   }
 
   @media screen and (max-width: 992px) {
+    padding: 147px 46px 46px;
+    row-gap: 47px;
     border-radius: 0 0 24px 24px;
+  }
+
+  @media screen and (max-width: 576px) {
+    padding: 72px 13px 13px;
+    row-gap: 18px;
+    border-radius: 0 0 16px 16px;
   }
 }
