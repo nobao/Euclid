@@ -29,11 +29,17 @@ searchCloseButton.addEventListener('click', function () {
 )
 
 // слайдер в блоке Hero
-let heroSliderDot = document.querySelectorAll('.hero__slider-dot');
+let heroSliderDots = document.querySelectorAll('.hero__slider-dot');
 let hero = document.querySelector('.hero');
 
-heroSliderDot.addEventListener('click', function () {
-  heroSliderDot.forEach((el) => {
-    console.log(el);
+heroSliderDots.forEach((el) => {
+  el.addEventListener('click', function (event) {
+    // убираем заливку всех точек
+    heroSliderDots.forEach((dot) => {
+      dot.classList.remove('hero__slider-dot--active');
+    })
+
+    console.log(heroSliderDots.indexOf(event.target));
+
   })
 })
