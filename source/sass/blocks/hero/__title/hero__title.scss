@@ -1,4 +1,6 @@
 .hero__title {
+  position: relative;
+  z-index:	100000;
   max-width: 837px;
   margin: 0;
   margin-bottom: 24px;

@@ -1,8 +1,13 @@
-.hero__slider-dots {
+.hero__slider-dots,
+.swiper-pagination,
+.swiper-horizontal>.swiper-pagination-bullets,
+.swiper-pagination-bullets.swiper-pagination-horizontal,
+.swiper-pagination-custom, .swiper-pagination-fraction {
   position: absolute;
   bottom: 30px;
   left: 50%;
   display: flex;
+  width: auto;
   gap: 20px;
   margin: 0;
   padding: 0;

@@ -1,6 +1,7 @@
 @use './vendor/normalize.scss';
 @use './vendor/variables.scss';
 @use './vendor/fonts.scss';
+@use './vendor/swiper.scss';
 @use './blocks/visually-hidden/visually-hidden.scss';
 @use './blocks/page/page.scss';
 @use './blocks/page/__header/page__header.scss';
@@ -37,7 +38,9 @@
 @use './blocks/content/__hero/content__hero.scss';
 @use './blocks/hero/hero.scss';
 @use './blocks/hero/--bg/hero--bg--1.scss';
+@use './blocks/hero/__image/hero__image.scss';
 @use './blocks/hero/__title/hero__title.scss';
+@use './blocks/hero/__button/hero__button.scss';
 @use './blocks/heading-text/heading-text.scss';
 @use './blocks/heading-text/--color/heading-text--color--white.scss';
 @use './blocks/heading-text/--color/heading-text--color--black.scss';

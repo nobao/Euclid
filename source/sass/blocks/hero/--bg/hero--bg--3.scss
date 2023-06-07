@@ -1,5 +1,8 @@
 .hero--bg--3 {
   background-image: url(../../../../images/hero-3_1920.jpg);
+  background-color: #8ec5e7;
+  background-size: cover;
+  background-repeat: no-repeat;
 
   @media (min-resolution: 2dppx) {
     background-image: url(../../../../images/hero-3_1920@2x.jpg);

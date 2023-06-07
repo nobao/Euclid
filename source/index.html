@@ -6,13 +6,17 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Проектная организация "Евклид"</title>
+  <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"
+  />
   <link rel="stylesheet" href="./css/style.css">
 </head>
 
 <body class="page">
   <header class="page__header header">
     <a href="#" class="header__logo logo logo--place--header">
-      <img class="logo__img" src="/images/logo.svg" alt="Логотип Евклид">
+      <img class="logo__img" src="./images/logo.svg" alt="Логотип Евклид">
     </a>
     <nav class="header__menu menu menu--place--header menu--status--closed menu--status--nojs">
       <button class="menu__toggle" type="button">
@@ -78,7 +82,43 @@
   </header>
 
   <main class="page__content content">
-    <section class="content__hero hero hero--bg--1">
+    <section class="content__hero hero">
+      <div class="swiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <picture>
+              <source media="(min-width: 1201px)" srcset="./images/hero-1_1920.jpg 1x, ./images/hero-1_1920@2x.jpg 2x">
+              <source media="(max-width: 576px)" srcset="./images/hero-1_320.jpg 1x, ./images/hero-1_320@2x.jpg 2x">
+              <source media="(max-width: 992px)" srcset="./images/hero-1_768.jpg 1x, ./images/hero-1_768@2x.jpg 2x">
+              <source media="(max-width: 1200px)" srcset="./images/hero-1_1024.jpg 1x, ./images/hero-1_1024@2x.jpg 2x">
+              <img class="hero__image hero__image--order--1" src="./images/hero-1_1920.jpg" alt="За рабочим столом люди с компьютерами и записями">
+            </picture>
+          </div>
+          <div class="swiper-slide">
+            <picture>
+              <source media="(min-width: 1201px)" srcset="./images/hero-2_1920.jpg 1x, ./images/hero-2_1920@2x.jpg 2x">
+              <source media="(max-width: 576px)" srcset="./images/hero-2_320.jpg 1x, ./images/hero-2_320@2x.jpg 2x">
+              <source media="(max-width: 992px)" srcset="./images/hero-2_768.jpg 1x, ./images/hero-2_768@2x.jpg 2x">
+              <source media="(max-width: 1200px)" srcset="./images/hero-2_1024.jpg 1x, ./images/hero-2_1024@2x.jpg 2x">
+              <img class="hero__image hero__image--order--2" src="./images/hero-2_1920.jpg" alt="За рабочим столом люди с компьютерами и записями">
+            </picture>
+          </div>
+          <div class="swiper-slide">
+            <picture>
+              <source media="(min-width: 1201px)" srcset="./images/hero-3_1920.jpg 1x, ./images/hero-3_1920@2x.jpg 2x">
+              <source media="(max-width: 576px)" srcset="./images/hero-3_320.jpg 1x, ./images/hero-3_320@2x.jpg 2x">
+              <source media="(max-width: 992px)" srcset="./images/hero-3_768.jpg 1x, ./images/hero-3_768@2x.jpg 2x">
+              <source media="(max-width: 1200px)" srcset="./images/hero-3_1024.jpg 1x, ./images/hero-3_1024@2x.jpg 2x">
+              <img class="hero__image hero__image--order--3" src="./images/hero-3_1920.jpg" alt="За рабочим столом люди с компьютерами и записями">
+            </picture>
+          </div>
+        </div>
+        <ul class="hero__slider-dots swiper-pagination">
+          <li class="hero__slider-dot hero__slider-dot--1"></li>
+          <li class="hero__slider-dot hero__slider-dot--2"></li>
+          <li class="hero__slider-dot hero__slider-dot--3"></li>
+        </ul>
+      </div>
       <h1 class="hero__title">Проектные решения любой сложности</h1>
       <p class="hero__text heading-text heading-text--color--white">
         Есть над чем задуматься: базовые сценарии поведения пользователей и по
@@ -87,11 +127,6 @@
       <button class="hero__button button button--size--m button--bg--color button--text--big">
         Заказать расчёт
       </button>
-      <ul class="hero__slider-dots">
-        <li class="hero__slider-dot hero__slider-dot--1 hero__slider-dot--active"></li>
-        <li class="hero__slider-dot hero__slider-dot--2"></li>
-        <li class="hero__slider-dot hero__slider-dot--3"></li>
-      </ul>
     </section>
 
     <section class="content__about about">
@@ -245,32 +280,32 @@
       </div>
       <div class="order__image-content">
         <picture class="order__picture order__picture--order--first">
-          <source media="(min-width: 1201px)" srcset="/images/step-1_1920.jpg 1x, /images/step-1_1920@2x.jpg 2x">
-          <source media="(max-width: 576px)" srcset="/images/step-1_320.jpg 1x, /images/step-1_320@2x.jpg 2x">
-          <source media="(max-width: 992px)" srcset="/images/step-1_768.jpg 1x, /images/step-1_768@2x.jpg 2x">
-          <source media="(max-width: 1200px)" srcset="/images/step-1_1024.jpg 1x, /images/step-1_1024@2x.jpg 2x">
-          <img class="order__img" src="/images/step-1_1920.jpg" alt="За рабочим столом люди с компьютерами и записями">
+          <source media="(min-width: 1201px)" srcset="./images/step-1_1920.jpg 1x, ./images/step-1_1920@2x.jpg 2x">
+          <source media="(max-width: 576px)" srcset="./images/step-1_320.jpg 1x, ./images/step-1_320@2x.jpg 2x">
+          <source media="(max-width: 992px)" srcset="./images/step-1_768.jpg 1x, ./images/step-1_768@2x.jpg 2x">
+          <source media="(max-width: 1200px)" srcset="./images/step-1_1024.jpg 1x, ./images/step-1_1024@2x.jpg 2x">
+          <img class="order__img" src="./images/step-1_1920.jpg" alt="За рабочим столом люди с компьютерами и записями">
         </picture>
         <picture class="order__picture order__picture--order--second hidden">
-          <source media="(min-width: 1201px)" srcset="/images/step-2_1920.jpg 1x, /images/step-2_1920@2x.jpg 2x">
-          <source media="(max-width: 576px)" srcset="/images/step-2_320.jpg 1x, /images/step-2_320@2x.jpg 2x">
-          <source media="(max-width: 992px)" srcset="/images/step-2_768.jpg 1x, /images/step-2_768@2x.jpg 2x">
-          <source media="(max-width: 1200px)" srcset="/images/step-2_1024.jpg 1x, /images/step-2_1024@2x.jpg 2x">
-          <img class="order__img" src="/images/step-2_1920.jpg" alt="Человек пишет ручкой на листе бумаги">
+          <source media="(min-width: 1201px)" srcset="./images/step-2_1920.jpg 1x, ./images/step-2_1920@2x.jpg 2x">
+          <source media="(max-width: 576px)" srcset="./images/step-2_320.jpg 1x, ./images/step-2_320@2x.jpg 2x">
+          <source media="(max-width: 992px)" srcset="./images/step-2_768.jpg 1x, ./images/step-2_768@2x.jpg 2x">
+          <source media="(max-width: 1200px)" srcset="./images/step-2_1024.jpg 1x, ./images/step-2_1024@2x.jpg 2x">
+          <img class="order__img" src="./images/step-2_1920.jpg" alt="Человек пишет ручкой на листе бумаги">
         </picture>
         <picture class="order__picture order__picture--order--third hidden">
-          <source media="(min-width: 1201px)" srcset="/images/step-3_1920.jpg 1x, /images/step-3_1920@2x.jpg 2x">
-          <source media="(max-width: 576px)" srcset="/images/step-3_320.jpg 1x, /images/step-3_320@2x.jpg 2x">
-          <source media="(max-width: 992px)" srcset="/images/step-3_768.jpg 1x, /images/step-3_768@2x.jpg 2x">
-          <source media="(max-width: 1200px)" srcset="/images/step-3_1024.jpg 1x, /images/step-3_1024@2x.jpg 2x">
-          <img class="order__img" src="/images/step-3_1920.jpg" alt="Ноутбук и печатающие на нем руки человека">
+          <source media="(min-width: 1201px)" srcset="./images/step-3_1920.jpg 1x, ./images/step-3_1920@2x.jpg 2x">
+          <source media="(max-width: 576px)" srcset="./images/step-3_320.jpg 1x, ./images/step-3_320@2x.jpg 2x">
+          <source media="(max-width: 992px)" srcset="./images/step-3_768.jpg 1x, ./images/step-3_768@2x.jpg 2x">
+          <source media="(max-width: 1200px)" srcset="./images/step-3_1024.jpg 1x, ./images/step-3_1024@2x.jpg 2x">
+          <img class="order__img" src="./images/step-3_1920.jpg" alt="Ноутбук и печатающие на нем руки человека">
         </picture>
         <picture class="order__picture order__picture--order--fourth hidden">
-          <source media="(min-width: 1201px)" srcset="/images/step-4_1920.jpg 1x, /images/step-4_1920@2x.jpg 2x">
-          <source media="(max-width: 576px)" srcset="/images/step-4_320.jpg 1x, /images/step-4_320@2x.jpg 2x">
-          <source media="(max-width: 992px)" srcset="/images/step-4_768.jpg 1x, /images/step-4_768@2x.jpg 2x">
-          <source media="(max-width: 1200px)" srcset="/images/step-4_1024.jpg 1x, /images/step-4_1024@2x.jpg 2x">
-          <img class="order__img" src="/images/step-4_1920.jpg"
+          <source media="(min-width: 1201px)" srcset="./images/step-4_1920.jpg 1x, ./images/step-4_1920@2x.jpg 2x">
+          <source media="(max-width: 576px)" srcset="./images/step-4_320.jpg 1x, ./images/step-4_320@2x.jpg 2x">
+          <source media="(max-width: 992px)" srcset="./images/step-4_768.jpg 1x, ./images/step-4_768@2x.jpg 2x">
+          <source media="(max-width: 1200px)" srcset="./images/step-4_1024.jpg 1x, ./images/step-4_1024@2x.jpg 2x">
+          <img class="order__img" src="./images/step-4_1920.jpg"
             alt="Рабочий стол с клавиатурой, мышкой, блокнотом, карандашами, очками">
         </picture>
       </div>
@@ -550,6 +585,7 @@
     </div>
   </footer>
 
+  <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
   <script src="./js/script.js"></script>
 </body>
 

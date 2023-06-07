@@ -29,17 +29,27 @@ searchCloseButton.addEventListener('click', function () {
 )
 
 // слайдер в блоке Hero
-let heroSliderDots = document.querySelectorAll('.hero__slider-dot');
-let hero = document.querySelector('.hero');
+const swiper = new Swiper('.swiper', {
+  // Optional parameters
+  direction: 'horizontal',
+  loop: true,
 
-heroSliderDots.forEach((el) => {
-  el.addEventListener('click', function (event) {
-    // убираем заливку всех точек
-    heroSliderDots.forEach((dot) => {
-      dot.classList.remove('hero__slider-dot--active');
-    })
+  // If we need pagination
+  pagination: {
+    el: '.swiper-pagination',
+    // bulletClass: '.hero__slider-dot',
+    // bulletActiveClass: '.hero__slider-dot--active',
+    clickable: true,
+  },
 
-    console.log(heroSliderDots.indexOf(event.target));
+  // Navigation arrows
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+  },
 
-  })
-})
+  // And if we need scrollbar
+  scrollbar: {
+    el: '.swiper-scrollbar',
+  },
+});
