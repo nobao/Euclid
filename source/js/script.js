@@ -27,6 +27,32 @@ searchCloseButton.addEventListener('click', function () {
   searchForm.classList.add('hidden');
 }
 )
+// табы в блоке "Как мы работаем"
+let orderSection = document.querySelector('.order');
+let orderButtonNumber = orderSection.querySelectorAll('.order__number');
+let orderImage = orderSection.querySelectorAll('.order__picture');
+let orderText = orderSection.querySelectorAll('.order__text');
+
+orderButtonNumber.forEach((el) => {
+  el.addEventListener('click', function (evt) {
+   let tabNumber = evt.target.getAttribute('data-tab');
+
+   orderButtonNumber.forEach((el) => el.classList.remove('order__number--active'));
+
+   evt.target.classList.add('order__number--active');
+
+   // скрываем всё содержимое (текст и картинку)
+   orderImage.forEach((el) => el.classList.add('hidden'));
+   orderText.forEach((el) => el.classList.add('hidden'));
+
+   // показываем выбранный текст и картинку
+   let selectedText = orderSection.querySelector('.order__text--order--' + tabNumber);
+   selectedText.classList.remove('hidden');
+
+   let selectedImage = orderSection.querySelector('.order__picture--order--' + tabNumber);
+   selectedImage.classList.remove('hidden');
+  })
+})
 
 // слайдер в блоке Hero
 const swiper = new Swiper('.swiper', {
@@ -37,8 +63,6 @@ const swiper = new Swiper('.swiper', {
   // If we need pagination
   pagination: {
     el: '.swiper-pagination',
-    // bulletClass: '.hero__slider-dot',
-    // bulletActiveClass: '.hero__slider-dot--active',
     clickable: true,
   },
 
@@ -53,3 +77,4 @@ const swiper = new Swiper('.swiper', {
     el: '.swiper-scrollbar',
   },
 });
+

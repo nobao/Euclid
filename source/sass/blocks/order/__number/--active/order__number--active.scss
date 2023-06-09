@@ -1,3 +1,4 @@
-.order__number--active {
+.order__number--active,
+.order__number--active:focus {
   color: var(--button-active-bg-color);
 }
