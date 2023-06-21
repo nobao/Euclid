@@ -27,6 +27,33 @@ searchCloseButton.addEventListener('click', function () {
   searchForm.classList.add('hidden');
 }
 )
+
+// аккордеон
+// Получаем список элементов аккордеона
+const accordionItems = document.querySelectorAll('.faq__item');
+
+// Добавляем обработчик события клика на каждый элемент аккордеона
+accordionItems.forEach((item) => {
+  const heading = item.querySelector('.faq__heading');
+  heading.addEventListener('click', (event) => {
+    event.preventDefault(); // Предотвращаем действие по умолчанию (переход по ссылке)
+
+    // Проверяем, если текущая вкладка уже открыта, то закрываем её
+    const isOpen = item.classList.contains('faq__item--opened');
+    if (!isOpen) {
+      const openItem = document.querySelector('.faq__item--opened');
+      if (openItem) {
+        openItem.classList.remove('faq__item--opened');
+        openItem.classList.add('faq__item--closed');
+      }
+    }
+
+    // Переключаем классы для открытия/закрытия аккордеона
+    item.classList.toggle('faq__item--opened');
+    item.classList.toggle('faq__item--closed');
+  });
+});
+
 // табы в блоке "Как мы работаем"
 let orderSection = document.querySelector('.order');
 let orderButtonNumber = orderSection.querySelectorAll('.order__number');

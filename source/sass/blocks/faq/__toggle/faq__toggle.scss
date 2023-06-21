@@ -9,6 +9,8 @@
   border-radius: 50%;
   background-color: var(--icon-bg-color);
   cursor: pointer;
+  transition: transform 0.3s ease; /* Добавляем переход для свойства transform */
+
 
   @media screen and (max-width: 576px) {
     width: 30px;
