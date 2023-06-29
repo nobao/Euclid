@@ -6,12 +6,16 @@ menuToggle.addEventListener('click', function () {
   if (menu.classList.contains('menu--status--closed')) {
     menu.classList.remove('menu--status--closed');
     menu.classList.add('menu--status--opened');
+
   } else {
     menu.classList.add('menu--status--closed');
     menu.classList.remove('menu--status--opened');
   }
+
 }
 )
+
+
 
 // открытие окна поиска
 let searchOpenButton = document.querySelector('.search__open-button');
@@ -53,6 +57,9 @@ accordionItems.forEach((item) => {
     item.classList.toggle('faq__item--closed');
   });
 });
+
+// плавный выезд меню
+
 
 // табы в блоке "Как мы работаем"
 let orderSection = document.querySelector('.order');

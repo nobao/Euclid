@@ -1,5 +1,6 @@
 .button--bg--color {
   background-color: var(--button-bg-color);
+  transition: background-color 0.3s ease;
 }
 
 .button--bg--color:hover,

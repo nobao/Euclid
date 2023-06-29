@@ -1,6 +1,7 @@
 .button--bg--transparent {
   background-color: var(--button-transparent-bg-color);
   border: 3px solid var(--button-bg-color);
+  transition: background-color 0.3s ease;
 }
 
 .button--bg--transparent:hover,

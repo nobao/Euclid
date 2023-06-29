@@ -1,7 +1,10 @@
 .menu--status--closed {
   @media screen and (max-width: 1200px) {
+
     .menu__list--place--header {
-      display: none;
+      display: flex;
+      transform: translateX(-100%); /* Начальное смещение меню за левую границу экрана */
+      transition: transform 0.3s ease; /* Добавляем анимацию для плавного перехода */
     }
   }
 }

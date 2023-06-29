@@ -1,6 +1,9 @@
 .menu--status--opened {
+
   .menu__list--place--header {
     display: flex;
+    transition: transform 0.3s ease; /* Добавляем анимацию для плавного перехода */
+    transform: translateX(0); /* Исходное значение смещения */
   }
 
   .menu__toggle-icon {
